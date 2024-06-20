@@ -1,0 +1,228 @@
+site_name: Learning Python 
+site_description: A comprehensive guide to learning Python programming language
+site_author: Teach Me Codes
+site_url: https://learning.teachme.codes
+site_language: en
+
+repo_url: https://github.com/teach-me-codes/python
+
+extra_javascript:
+  - mathjax-config.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js
+
+
+
+markdown_extensions:
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  
+  - codehilite:
+      linenums: false
+      guess_lang: false
+      use_pygments: true
+      noclasses: true
+      pygments_style: manni
+
+
+
+
+  
+theme:
+  name: 'material'
+  #custom_dir: overrides
+  highlightjs: true
+  hljs_languages: [python]
+  include_homepage_in_sidebar: true
+  prev_next_buttons_location: bottom
+  navigation_depth: 4
+  titles_only: false
+  sticky_navigation: true
+  collapse_navigation: true
+  logo: assets/logo.png
+  favicon: assets/logo.png
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+# Plugins
+  plugins:
+    - blog
+    - search:
+        separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+    - minify:
+        minify_html: true
+  
+   
+ 
+#extra_css:
+#  - extra.css
+
+
+extra:
+  analytics:
+    provider: google
+    property: G-ECS7B3X8JM
+  feedback:
+    title: Was this page helpful?
+    ratings:
+      - icon: material/emoticon-happy-outline
+        name: This page was helpful
+        data: 1
+        note: >-
+          Thanks for your feedback!
+      - icon: material/emoticon-sad-outline
+        name: This page could be improved
+        data: 0
+        note: >- 
+          Thanks for your feedback! Help us improve this page by
+          using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  social:
+    - icon: fontawesome/brands/github
+      link: https://learning.teachme.codes
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/teachmecodes
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/teachmecodes
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/c/teachmecodes
+
+
+
+nav:
+- Home: index.md
+- Basic Python:
+  - Python Syntax and Semantics: python_syntax_and_semantics.md
+  - Variables and Data Types: variables_and_data_types.md
+  - Control Flow Statements: control_flow_statements.md
+  - Functions and Lambdas: functions_and_lambdas.md
+  - Exception Handling: exception_handling.md
+  - File IO Operations: file_io_operations.md
+  - List Comprehensions: list_comprehensions.md
+
+- Intermediate Python:
+  - Generators and Iterators: generators_and_iterators.md
+  - Decorators in Python: decorators_in_python.md
+  - Context Managers: context_managers.md
+  - Modules and Packages: modules_and_packages.md
+  - Virtual Environments: virtual_environments.md
+  - Python Standard Library: python_standard_library.md
+  - Regular Expressions: regular_expressions.md
+  - Using map_filter_reduce: using_map_filter_reduce.md
+  - String Manipulation Functions: string_manipulation_functions.md
+  - Numeric and Math Functions: numeric_and_math_functions.md
+  - Data Structure Functions: data_structure_functions.md
+  - Date and Time Functions: date_and_time_functions.md
+  - Input and Output Functions: input_and_output_functions.md
+  - Built-in Sorting and Searching: built_in_sorting_and_searching.md
+  - Type Conversion Functions: type_conversion_functions.md
+
+- Advanced Python:
+  - Object-Oriented Functions: object_oriented_functions.md
+  - Classes and Objects: classes_and_objects.md
+  - Inheritance and Polymorphism: inheritance_and_polymorphism.md
+  - Encapsulation and Abstraction: encapsulation_and_abstraction.md
+  - Magic Methods and Operator Overloading: magic_methods_and_operator_overloading.md
+  - Composition and Aggregation: composition_and_aggregation.md
+  - Class and Static Methods: class_and_static_methods.md
+  - Properties and Descriptors: properties_and_descriptors.md
+  - Abstract Base Classes: abstract_base_classes.md
+  - Metaclasses in Python: metaclasses_in_python.md
+  - Unit Testing in Python: unit_testing_in_python.md
+  - Debugging Techniques: debugging_techniques.md
+  - Profiling and Optimization: profiling_and_optimization.md
+  - Concurrency and Parallelism: concurrency_and_parallelism.md
+  - Asynchronous Programming: asynchronous_programming.md
+  
