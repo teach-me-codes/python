@@ -1,0 +1,2037 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide to learning Python programming language">
+      
+      
+        <meta name="author" content="Teach Me Codes">
+      
+      
+        <link rel="canonical" href="https://learning.teachme.codes/class_and_static_methods/">
+      
+      
+        <link rel="prev" href="../composition_and_aggregation/">
+      
+      
+        <link rel="next" href="../properties_and_descriptors/">
+      
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+    
+    
+      
+        <title>Class and Static Methods - Learning Python</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-ECS7B3X8JM"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-ECS7B3X8JM",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-ECS7B3X8JM",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#question" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Learning Python" class="md-header__button md-logo" aria-label="Learning Python" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Learning Python
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Class and Static Methods
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/teach-me-codes/python" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../python_syntax_and_semantics/" class="md-tabs__link">
+          
+  
+    
+  
+  Basic Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../generators_and_iterators/" class="md-tabs__link">
+          
+  
+    
+  
+  Intermediate Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../object_oriented_functions/" class="md-tabs__link">
+          
+  
+    
+  
+  Advanced Python
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Learning Python" class="md-nav__button md-logo" aria-label="Learning Python" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Learning Python
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/teach-me-codes/python" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basic Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Basic Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_syntax_and_semantics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python Syntax and Semantics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variables_and_data_types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables and Data Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../control_flow_statements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Control Flow Statements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions_and_lambdas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions and Lambdas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exception_handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exception Handling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file_io_operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File IO Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../list_comprehensions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    List Comprehensions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Intermediate Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Intermediate Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generators_and_iterators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generators and Iterators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../decorators_in_python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Decorators in Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../context_managers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Context Managers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules_and_packages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modules and Packages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../virtual_environments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Virtual Environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_standard_library/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python Standard Library
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regular_expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regular Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using_map_filter_reduce/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using map_filter_reduce
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../string_manipulation_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    String Manipulation Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../numeric_and_math_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Numeric and Math Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_structure_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Structure Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../date_and_time_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Date and Time Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../input_and_output_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Input and Output Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built_in_sorting_and_searching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Built-in Sorting and Searching
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../type_conversion_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Type Conversion Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Advanced Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_oriented_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Object-Oriented Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes_and_objects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes and Objects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inheritance_and_polymorphism/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inheritance and Polymorphism
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../encapsulation_and_abstraction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Encapsulation and Abstraction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../magic_methods_and_operator_overloading/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Magic Methods and Operator Overloading
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../composition_and_aggregation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Composition and Aggregation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Class and Static Methods
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../properties_and_descriptors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties and Descriptors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abstract_base_classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abstract Base Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metaclasses_in_python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metaclasses in Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unit_testing_in_python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit Testing in Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../debugging_techniques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Debugging Techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../profiling_and_optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Profiling and Optimization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concurrency_and_parallelism/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concurrency and Parallelism
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asynchronous_programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Asynchronous Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/teach-me-codes/python/edit/master/docs/class_and_static_methods.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/teach-me-codes/python/raw/master/docs/class_and_static_methods.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<h1 id="question">Question</h1>
+<p><strong>Main question</strong>: What is a class method in Python and how does it differ from an instance method?</p>
+<p><strong>Explanation</strong>: Explain how class methods are defined with the <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/classmethod" title="GitHub User: classmethod">@classmethod</a> decorator, operate on the class itself rather than instances, and can be used to modify class variables or perform operations that are not specific to any instance.</p>
+<p><strong>Follow-up questions</strong>:</p>
+<ol>
+<li>
+<p>What are some common use cases for class methods in Python programming?</p>
+</li>
+<li>
+<p>How can class methods be utilized to create alternative constructors for a class?</p>
+</li>
+<li>
+<p>Can you discuss the concept of method resolution order (MRO) in the context of class methods?</p>
+</li>
+</ol>
+<h1 id="answer">Answer</h1>
+<h3 id="main-question-what-is-a-class-method-in-python-and-how-does-it-differ-from-an-instance-method">Main question: What is a class method in Python and how does it differ from an instance method?</h3>
+<p>In Python, a <strong>class method</strong> is a method that is bound to the class and not the object of the class. It takes the class itself as the first argument which is conventionally named <code>cls</code>. Class methods are defined using the <code>@classmethod</code> decorator.</p>
+<p>The major differences between a class method and an instance method are:</p>
+<ol>
+<li>
+<p><strong>Bound to Class</strong>: Class methods are bound to the class itself, whereas instance methods are bound to the object of the class.</p>
+</li>
+<li>
+<p><strong>Access Levels</strong>: Class methods have access to the class itself and its attributes but not to the individual instances. Instance methods have access to specific instance attributes.</p>
+</li>
+<li>
+<p><strong>First Parameter</strong>: Class methods take the class as the first parameter while instance methods take the instance as the first parameter.</p>
+</li>
+<li>
+<p><strong>Use Cases</strong>: Class methods are used to modify class variables, create alternative constructors, or perform operations that are not specific to any instance.</p>
+</li>
+</ol>
+<p><strong>Definition of a class method in Python:</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">class_variable</span> <span class="o">=</span> <span class="mi">10</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="nd">@classmethod</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="k">def</span> <span class="nf">class_method</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">):</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>        <span class="c1"># Class method can access class variables</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Accessing class variable: </span><span class="si">{</span><span class="bp">cls</span><span class="o">.</span><span class="n">class_variable</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="c1"># Perform operations</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        <span class="k">return</span> <span class="n">arg1</span> <span class="o">+</span> <span class="n">arg2</span>
+</span></code></pre></div>
+<h3 id="follow-up-questions">Follow-up questions:</h3>
+<ul>
+<li>
+<p><strong>What are some common use cases for class methods in Python programming?</strong></p>
+</li>
+<li>
+<p><strong>Accessing or modifying class variables</strong>: Class methods can be used to access or modify class-level variables that are common across all instances of the class.</p>
+</li>
+<li>
+<p><strong>Alternative constructors</strong>: Class methods can provide alternative ways to create instances of a class with different initialization parameters.</p>
+</li>
+<li>
+<p><strong>Factory methods</strong>: Class methods can act as factory methods to create instances based on specific criteria or conditions.</p>
+</li>
+<li>
+<p><strong>How can class methods be utilized to create alternative constructors for a class?</strong></p>
+</li>
+</ul>
+<p>By defining a class method that initializes and returns an instance of the class with specific parameters, you can create alternative constructors. This is commonly used when you want to create instances using different input formats or conditions.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">y</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="nd">@classmethod</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="k">def</span> <span class="nf">from_string</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">input_string</span><span class="p">):</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>        <span class="c1"># Process input_string to extract x and y values</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>        <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">process_string</span><span class="p">(</span><span class="n">input_string</span><span class="p">)</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>  <span class="c1"># Returning an instance of the class</span>
+</span></code></pre></div>
+<ul>
+<li><strong>Can you discuss the concept of method resolution order (MRO) in the context of class methods?</strong></li>
+</ul>
+<p>Method Resolution Order (MRO) refers to the order in which Python searches for methods in a class hierarchy. In the context of class methods:</p>
+<ul>
+<li>
+<p>When a class method is called, Python searches for the method in the class itself and then follows the MRO to search in parent classes if the method is not found in the current class.</p>
+</li>
+<li>
+<p>Class methods are inherited by subclasses and can be overridden to provide different functionality. The MRO determines the order in which these methods are resolved when called on instances of subclasses.</p>
+</li>
+<li>
+<p>Understanding the MRO is important when dealing with class methods to ensure the correct method is called based on the inheritance hierarchy.</p>
+</li>
+</ul>
+<p>By utilizing class methods in Python, you can effectively manage shared behavior across class instances and define functionality that operates on the class level rather than individual instances.</p>
+<h1 id="question_1">Question</h1>
+<p><strong>Main question</strong>: How do you define a static method in a Python class and when is it typically used?</p>
+<p><strong>Explanation</strong>: Describe the <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/staticmethod" title="GitHub User: staticmethod">@staticmethod</a> decorator used to define static methods in Python, which do not have access to class or instance attributes but are useful for grouping utility functions or operations that do not require instance or class-specific data.</p>
+<p><strong>Follow-up questions</strong>:</p>
+<ol>
+<li>
+<p>In what scenarios would using a static method be more appropriate than a class method or instance method?</p>
+</li>
+<li>
+<p>Can you provide examples of situations where static methods are commonly employed in Python code?</p>
+</li>
+<li>
+<p>How does the absence of self or cls parameters in static methods impact their behavior and usage within a class?</p>
+</li>
+</ol>
+<h1 id="answer_1">Answer</h1>
+<h1 id="how-do-you-define-a-static-method-in-a-python-class-and-when-is-it-typically-used">How do you define a static method in a Python class and when is it typically used?</h1>
+<p>In Python, a static method is defined using the <code>@staticmethod</code> decorator. This decorator is used to indicate that a method should be bound to the class and not the object instance. Static methods do not operate on instances of a class and do not have access to instance or class attributes. They are typically used when a method does not require any access to instance-specific data or class-specific data and can be thought of as utility functions related to the class.</p>
+<p>Here is an example of defining a static method in a Python class:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="nd">@staticmethod</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="k">def</span> <span class="nf">static_method</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">):</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        <span class="k">return</span> <span class="n">arg1</span> <span class="o">+</span> <span class="n">arg2</span>
+</span></code></pre></div>
+<p>In this example, the <code>static_method</code> does not operate on any instance-specific data and is defined as a static method using the <code>@staticmethod</code> decorator.</p>
+<h1 id="follow-up-questions_1">Follow-up questions</h1>
+<ul>
+<li><strong>In what scenarios would using a static method be more appropriate than a class method or instance method?</strong></li>
+</ul>
+<p>Static methods are more appropriate than class methods or instance methods in scenarios where the method does not operate on instance-specific data or class-specific data. If a method is a utility function that is related to the class but does not require access to the instance or class attributes, a static method is more suitable.</p>
+<ul>
+<li><strong>Can you provide examples of situations where static methods are commonly employed in Python code?</strong></li>
+</ul>
+<p>Static methods are commonly employed in Python code for utility functions such as conversion functions, validation functions, and helper functions that are related to the class but do not depend on instance-specific data. For example, functions to perform mathematical calculations, data validation, or string manipulation can be implemented as static methods.</p>
+<ul>
+<li><strong>How does the absence of self or cls parameters in static methods impact their behavior and usage within a class?</strong></li>
+</ul>
+<p>The absence of <code>self</code> or <code>cls</code> parameters in static methods means that these methods do not have access to instance attributes (<code>self</code>) or class attributes (<code>cls</code>). This restriction ensures that static methods are independent of the state of the object or the class and do not modify them. It also enforces the principle of separation of concerns by encapsulating utility functions within the class without relying on instance or class-specific data.</p>
+<h1 id="question_2">Question</h1>
+<p><strong>Main question</strong>: What are the benefits of using class methods and static methods in Python programming?</p>
+<p><strong>Explanation</strong>: Discuss the advantages of encapsulating shared functionality within class methods and static methods, including improved code organization, easier maintenance, and efficient access to common operations without the need for instance attributes.</p>
+<p><strong>Follow-up questions</strong>:</p>
+<ol>
+<li>
+<p>How can the use of class methods and static methods enhance code reusability and promote modular design in Python programs?</p>
+</li>
+<li>
+<p>In what ways do class methods and static methods contribute to better performance and resource management in large-scale Python applications?</p>
+</li>
+<li>
+<p>Can you explain how class methods and static methods facilitate better testing practices and debugging processes during software development?</p>
+</li>
+</ol>
+<h1 id="answer_2">Answer</h1>
+<h1 id="benefits-of-using-class-and-static-methods-in-python-programming">Benefits of Using Class and Static Methods in Python Programming</h1>
+<p>Class methods and static methods are essential features in Python programming that provide several benefits in terms of code organization, maintenance, efficiency, and reusability.</p>
+<h3 id="improved-code-organization">Improved Code Organization</h3>
+<ul>
+<li>Class methods are bound to the class rather than instances, allowing for logical grouping of related functionality.</li>
+<li>Static methods provide a way to create utility functions that are logically related to the class.</li>
+<li>Both class and static methods help in organizing code cohesively, leading to better readability and maintainability.</li>
+</ul>
+<h3 id="easier-maintenance">Easier Maintenance</h3>
+<ul>
+<li>By encapsulating shared functionality within class methods and static methods, it becomes easier to make changes or updates in one place without affecting multiple instances.</li>
+<li>This reduces duplication of code and minimizes the risk of introducing errors during maintenance.</li>
+</ul>
+<h3 id="efficient-access-to-common-operations">Efficient Access to Common Operations</h3>
+<ul>
+<li>Class methods offer easy access to common operations that need to be performed on the class itself rather than individual instances.</li>
+<li>Static methods provide a way to define utility functions that are related to the class but do not require access to instance-specific data.</li>
+</ul>
+<h3 id="enhanced-code-reusability-and-modular-design">Enhanced Code Reusability and Modular Design</h3>
+<ul>
+<li>Class methods and static methods promote code reusability by allowing the same code to be shared across multiple instances or even different classes.</li>
+<li>They help in creating modular designs where functionality is encapsulated within the class, promoting separation of concerns and easier integration of new features.</li>
+</ul>
+<h3 id="follow-up-questions_2">Follow-up Questions</h3>
+<h4 id="how-can-the-use-of-class-methods-and-static-methods-enhance-code-reusability-and-promote-modular-design-in-python-programs">How can the use of class methods and static methods enhance code reusability and promote modular design in Python programs?</h4>
+<ul>
+<li>Class methods and static methods allow for shared functionality to be encapsulated within the class, leading to better code organization and modular design.</li>
+<li>They promote reusability by enabling the same logic to be shared across multiple instances or classes without duplication.</li>
+</ul>
+<h4 id="in-what-ways-do-class-methods-and-static-methods-contribute-to-better-performance-and-resource-management-in-large-scale-python-applications">In what ways do class methods and static methods contribute to better performance and resource management in large-scale Python applications?</h4>
+<ul>
+<li>Class methods and static methods help in optimizing memory usage by avoiding redundant instance data for common operations.</li>
+<li>They contribute to better performance by providing efficient access to shared functionality across the application without the overhead of maintaining instance attributes.</li>
+</ul>
+<h4 id="can-you-explain-how-class-methods-and-static-methods-facilitate-better-testing-practices-and-debugging-processes-during-software-development">Can you explain how class methods and static methods facilitate better testing practices and debugging processes during software development?</h4>
+<ul>
+<li>Class methods and static methods make it easier to isolate and test specific functionality within a class without relying on instance state.</li>
+<li>They facilitate better testing practices by allowing for unit testing of methods that do not depend on instance attributes.</li>
+<li>In debugging processes, class and static methods provide clear boundaries for troubleshooting specific functionalities within the class. </li>
+</ul>
+<p>Overall, the use of class methods and static methods in Python programming enhances code organization, promotes reusability, improves performance, and facilitates testing and debugging processes in software development.</p>
+<h1 id="question_3">Question</h1>
+<p><strong>Main question</strong>: How are class methods and static methods different from regular instance methods in Python?</p>
+<p><strong>Explanation</strong>: Elaborate on the distinctions between class methods, which operate on the class itself with access to class variables, and static methods, which are independent of class and instance attributes, compared to instance methods that interact with specific instances and their attributes.</p>
+<p><strong>Follow-up questions</strong>:</p>
+<ol>
+<li>
+<p>What are the key considerations when deciding whether to use a class method, a static method, or an instance method for a particular functionality?</p>
+</li>
+<li>
+<p>Can you illustrate a scenario where converting an instance method to a class method or a static method would improve code clarity and efficiency?</p>
+</li>
+<li>
+<p>How does the choice of method type impact the design and maintainability of a Python class or object-oriented system?</p>
+</li>
+</ol>
+<h1 id="answer_3">Answer</h1>
+<h2 id="main-question-how-are-class-methods-and-static-methods-different-from-regular-instance-methods-in-python">Main question: How are class methods and static methods different from regular instance methods in Python?</h2>
+<p>In Python, class methods and static methods are different from regular instance methods in how they are defined and accessed within a class. Here are the key distinctions:</p>
+<h3 id="class-method">Class Method:</h3>
+<ul>
+<li><strong>Definition:</strong> Defined using the <code>@classmethod</code> decorator, they take a <code>cls</code> parameter referring to the class itself.</li>
+<li><strong>Access:</strong> Can access and modify class state/variables.</li>
+<li><strong>Usage:</strong> Typically used when the method needs to operate on the class itself rather than instances.</li>
+<li><strong>Example:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="n">class_variable</span> <span class="o">=</span> <span class="mi">10</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="nd">@classmethod</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="k">def</span> <span class="nf">class_method</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>        <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">class_variable</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c1"># Accessing a class method</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">MyClass</span><span class="o">.</span><span class="n">class_method</span><span class="p">()</span>
+</span></code></pre></div></li>
+</ul>
+<h3 id="static-method">Static Method:</h3>
+<ul>
+<li><strong>Definition:</strong> Defined using the <code>@staticmethod</code> decorator, they do not take any implicit first parameter.</li>
+<li><strong>Access:</strong> Cannot access class state/variables directly.</li>
+<li><strong>Usage:</strong> Suitable for defining methods that don't require access to instance or class state.</li>
+<li><strong>Example:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="nd">@staticmethod</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="k">def</span> <span class="nf">static_method</span><span class="p">():</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="k">return</span> <span class="s2">&quot;This is a static method&quot;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1"># Accessing a static method</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="n">MyClass</span><span class="o">.</span><span class="n">static_method</span><span class="p">()</span>
+</span></code></pre></div></li>
+</ul>
+<h3 id="instance-method">Instance Method:</h3>
+<ul>
+<li><strong>Definition:</strong> The most common method type in Python classes, taking <code>self</code> as the first parameter.</li>
+<li><strong>Access:</strong> Can access and modify instance attributes (state).</li>
+<li><strong>Usage:</strong> Used for behavior specific to a particular instance.</li>
+<li><strong>Example:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="k">def</span> <span class="nf">instance_method</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c1"># Creating an instance and calling an instance method</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="n">obj</span> <span class="o">=</span> <span class="n">MyClass</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="n">obj</span><span class="o">.</span><span class="n">instance_method</span><span class="p">()</span>
+</span></code></pre></div></li>
+</ul>
+<h2 id="follow-up-questions_3">Follow-up questions:</h2>
+<ol>
+<li><strong>What are the key considerations when deciding whether to use a class method, a static method, or an instance method for a particular functionality?</strong></li>
+<li>Use a class method if the method needs to access or modify class-level variables.</li>
+<li>Use a static method if the method is standalone and does not depend on class or instance attributes.</li>
+<li>
+<p>Use an instance method if the method relies on instance-specific data.</p>
+</li>
+<li>
+<p><strong>Can you illustrate a scenario where converting an instance method to a class method or a static method would improve code clarity and efficiency?</strong></p>
+</li>
+<li>
+<p>Consider a utility function that calculates a mathematical formula, which does not depend on any instance data. Converting this function to a static method can improve clarity and efficiency by clearly indicating its independence from instance variables.</p>
+</li>
+<li>
+<p><strong>How does the choice of method type impact the design and maintainability of a Python class or object-oriented system?</strong></p>
+</li>
+<li>Choosing the appropriate method type enhances code readability and maintainability by clearly conveying the behavior's intent.</li>
+<li>Class methods and static methods promote code reusability and encapsulation, leading to more modular and maintainable codebases.</li>
+</ol>
+<h1 id="question_4">Question</h1>
+<p><strong>Main question</strong>: How can class methods and static methods contribute to the design and implementation of a Python application?</p>
+<p><strong>Explanation</strong>: Explain how the use of class methods and static methods can promote a cleaner and more organized code structure, facilitate shared functionality across multiple instances, and enhance the versatility and extensibility of Python applications by encapsulating logic that is agnostic to specific instances or class state.</p>
+<p><strong>Follow-up questions</strong>:</p>
+<ol>
+<li>
+<p>What strategies can be employed to effectively document and communicate the purpose and usage of class methods and static methods within a Python codebase?</p>
+</li>
+<li>
+<p>In what ways do class methods and static methods align with the principles of object-oriented programming and modular design in Python development?</p>
+</li>
+<li>
+<p>Can you provide examples of design patterns or best practices where the implementation of class methods and static methods is particularly beneficial for software scalability and maintainability?</p>
+</li>
+</ol>
+<h1 id="answer_4">Answer</h1>
+<h2 id="main-question-how-can-class-methods-and-static-methods-contribute-to-the-design-and-implementation-of-a-python-application">Main question: How can class methods and static methods contribute to the design and implementation of a Python application?</h2>
+<p>Class methods and static methods are essential tools in Python programming that enhance the design and implementation of applications by promoting a more organized and modular code structure. They offer a way to define functionality that is independent of specific class instances, thus facilitating shared behavior across multiple objects.</p>
+<h3 id="class-methods">Class methods:</h3>
+<ul>
+<li><strong>Shared functionality</strong>: Class methods are used to define methods that operate on the class itself rather than on instances of the class. They receive the class itself as the first argument, conventionally named <code>cls</code>, allowing them to access or modify class-level attributes and behavior.</li>
+<li><strong>Factory methods</strong>: Class methods are often used as factory methods to create instances of a class with specific configurations or initializations.</li>
+</ul>
+<h3 id="static-methods">Static methods:</h3>
+<ul>
+<li><strong>Utility functions</strong>: Static methods are independent of both the class and its instances. They are defined using the <code>@staticmethod</code> decorator and are commonly used for grouping utility functions related to the class.</li>
+<li><strong>Encapsulation of logic</strong>: Static methods encapsulate functionality that is not dependent on instance or class state, promoting a cleaner separation of concerns within the codebase.</li>
+</ul>
+<p>In practice, the use of class and static methods in Python applications can result in more maintainable, extensible, and readable codebases by separating concerns and emphasizing reusability.</p>
+<h2 id="what-strategies-can-be-employed-to-effectively-document-and-communicate-the-purpose-and-usage-of-class-methods-and-static-methods-within-a-python-codebase">What strategies can be employed to effectively document and communicate the purpose and usage of class methods and static methods within a Python codebase?</h2>
+<p>To effectively document and communicate the purpose and usage of class methods and static methods in a Python codebase, consider the following strategies:</p>
+<ul>
+<li><strong>Docstrings</strong>: Write descriptive docstrings for class methods and static methods to explain their functionality, parameters, return values, and any other relevant details.</li>
+<li><strong>Naming conventions</strong>: Use meaningful names for class methods and static methods that accurately reflect their purpose and functionality.</li>
+<li><strong>Comments</strong>: Include comments in the code to provide additional context or explanations where necessary.</li>
+<li><strong>Documentation tools</strong>: Utilize tools such as Sphinx or Pydoc to generate structured documentation from docstrings for the entire codebase.</li>
+<li><strong>Usage examples</strong>: Provide clear and concise examples demonstrating how to use class methods and static methods in different scenarios.</li>
+<li><strong>Version control</strong>: Keep the documentation in sync with code changes by using version control systems like Git.</li>
+</ul>
+<p>By employing these strategies, developers can ensure that the purpose and usage of class methods and static methods are well-documented and communicated effectively within the Python codebase.</p>
+<h2 id="in-what-ways-do-class-methods-and-static-methods-align-with-the-principles-of-object-oriented-programming-and-modular-design-in-python-development">In what ways do class methods and static methods align with the principles of object-oriented programming and modular design in Python development?</h2>
+<p>Class methods and static methods align closely with the principles of object-oriented programming (OOP) and modular design in Python development by promoting encapsulation, inheritance, and code reusability.</p>
+<h3 id="object-oriented-programming-principles">Object-oriented programming principles:</h3>
+<ul>
+<li><strong>Encapsulation</strong>: Class methods and static methods encapsulate behavior within classes, promoting data hiding and abstraction.</li>
+<li><strong>Inheritance</strong>: Class methods can be inherited by subclasses, allowing for method overriding and polymorphic behavior.</li>
+<li><strong>Polymorphism</strong>: Static methods can exhibit polymorphic behavior, enabling different classes to implement the same method signature.</li>
+</ul>
+<h3 id="modular-design-principles">Modular design principles:</h3>
+<ul>
+<li><strong>Separation of concerns</strong>: Class methods and static methods help in separating concerns within a class or module, leading to a more maintainable and understandable codebase.</li>
+<li><strong>Reusability</strong>: By defining shared functionality in class methods and static methods, developers can reuse code across different parts of the application without duplication.</li>
+<li><strong>Scalability</strong>: Modular design facilitated by class methods and static methods allows for easier scaling of the application by adding or modifying components with minimal impact on existing code.</li>
+</ul>
+<p>Overall, the use of class methods and static methods in Python development aligns with the core tenets of OOP and modular design, enabling developers to build flexible, extensible, and maintainable applications.</p>
+<h2 id="can-you-provide-examples-of-design-patterns-or-best-practices-where-the-implementation-of-class-methods-and-static-methods-is-particularly-beneficial-for-software-scalability-and-maintainability">Can you provide examples of design patterns or best practices where the implementation of class methods and static methods is particularly beneficial for software scalability and maintainability?</h2>
+<p><strong>Singleton Pattern with Class Methods:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">class</span> <span class="nc">Singleton</span><span class="p">:</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="n">_instance</span> <span class="o">=</span> <span class="kc">None</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    <span class="nd">@classmethod</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="k">def</span> <span class="nf">instance</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="k">if</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_instance</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>            <span class="bp">cls</span><span class="o">.</span><span class="n">_instance</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">()</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>        <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_instance</span>
+</span></code></pre></div></p>
+<p><strong>Factory Pattern with Class Methods:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">class</span> <span class="nc">Shape</span><span class="p">:</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="nd">@classmethod</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="k">def</span> <span class="nf">create</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">shape_type</span><span class="p">):</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>        <span class="k">if</span> <span class="n">shape_type</span> <span class="o">==</span> <span class="s1">&#39;circle&#39;</span><span class="p">:</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>            <span class="k">return</span> <span class="n">Circle</span><span class="p">()</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>        <span class="k">elif</span> <span class="n">shape_type</span> <span class="o">==</span> <span class="s1">&#39;square&#39;</span><span class="p">:</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>            <span class="k">return</span> <span class="n">Square</span><span class="p">()</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>        <span class="k">else</span><span class="p">:</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Invalid shape type&#39;</span><span class="p">)</span>
+</span></code></pre></div></p>
+<p><strong>Utility Functions with Static Methods:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">class</span> <span class="nc">MathUtils</span><span class="p">:</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="nd">@staticmethod</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="k">def</span> <span class="nf">is_prime</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>        <span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>            <span class="k">return</span> <span class="kc">False</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="o">**</span><span class="mf">0.5</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>            <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>                <span class="k">return</span> <span class="kc">False</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>        <span class="k">return</span> <span class="kc">True</span>
+</span></code></pre></div></p>
+<p>By leveraging class methods for patterns like Singleton and Factory, and static methods for utility functions, developers can improve software scalability and maintainability by encapsulating common functionality and promoting code reuse.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../composition_and_aggregation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Composition and Aggregation">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Composition and Aggregation
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../properties_and_descriptors/" class="md-footer__link md-footer__link--next" aria-label="Next: Properties and Descriptors">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Properties and Descriptors
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://learning.teachme.codes" target="_blank" rel="noopener" title="learning.teachme.codes" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/teachmecodes" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/teachmecodes" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/c/teachmecodes" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+        <script src="../mathjax-config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

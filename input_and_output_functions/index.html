@@ -1,0 +1,2000 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide to learning Python programming language">
+      
+      
+        <meta name="author" content="Teach Me Codes">
+      
+      
+        <link rel="canonical" href="https://learning.teachme.codes/input_and_output_functions/">
+      
+      
+        <link rel="prev" href="../date_and_time_functions/">
+      
+      
+        <link rel="next" href="../built_in_sorting_and_searching/">
+      
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+    
+    
+      
+        <title>Input and Output Functions - Learning Python</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-ECS7B3X8JM"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-ECS7B3X8JM",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-ECS7B3X8JM",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#question" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Learning Python" class="md-header__button md-logo" aria-label="Learning Python" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Learning Python
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Input and Output Functions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/teach-me-codes/python" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../python_syntax_and_semantics/" class="md-tabs__link">
+          
+  
+    
+  
+  Basic Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../generators_and_iterators/" class="md-tabs__link">
+          
+  
+    
+  
+  Intermediate Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../object_oriented_functions/" class="md-tabs__link">
+          
+  
+    
+  
+  Advanced Python
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Learning Python" class="md-nav__button md-logo" aria-label="Learning Python" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Learning Python
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/teach-me-codes/python" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Basic Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Basic Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_syntax_and_semantics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python Syntax and Semantics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variables_and_data_types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables and Data Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../control_flow_statements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Control Flow Statements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../functions_and_lambdas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions and Lambdas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exception_handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exception Handling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file_io_operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File IO Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../list_comprehensions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    List Comprehensions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Intermediate Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Intermediate Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generators_and_iterators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generators and Iterators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../decorators_in_python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Decorators in Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../context_managers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Context Managers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules_and_packages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modules and Packages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../virtual_environments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Virtual Environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_standard_library/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python Standard Library
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regular_expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regular Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using_map_filter_reduce/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using map_filter_reduce
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../string_manipulation_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    String Manipulation Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../numeric_and_math_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Numeric and Math Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_structure_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Structure Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../date_and_time_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Date and Time Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Input and Output Functions
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built_in_sorting_and_searching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Built-in Sorting and Searching
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../type_conversion_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Type Conversion Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Advanced Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_oriented_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Object-Oriented Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes_and_objects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes and Objects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inheritance_and_polymorphism/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inheritance and Polymorphism
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../encapsulation_and_abstraction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Encapsulation and Abstraction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../magic_methods_and_operator_overloading/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Magic Methods and Operator Overloading
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../composition_and_aggregation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Composition and Aggregation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_and_static_methods/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Class and Static Methods
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../properties_and_descriptors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties and Descriptors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abstract_base_classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abstract Base Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metaclasses_in_python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metaclasses in Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unit_testing_in_python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit Testing in Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../debugging_techniques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Debugging Techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../profiling_and_optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Profiling and Optimization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concurrency_and_parallelism/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concurrency and Parallelism
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asynchronous_programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Asynchronous Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/teach-me-codes/python/edit/master/docs/input_and_output_functions.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/teach-me-codes/python/raw/master/docs/input_and_output_functions.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<h1 id="question">Question</h1>
+<p><strong>Main question</strong>: What are the input and output functions in Basic Python used for?</p>
+<p><strong>Explanation</strong>: The candidate should describe how input and output functions in Basic Python allow interaction with users through the console, reading input from files and writing output to files, which are essential for building interactive applications.</p>
+<p><strong>Follow-up questions</strong>:</p>
+<ol>
+<li>
+<p>How does the input() function enable user input in Python programs?</p>
+</li>
+<li>
+<p>Can you explain the difference between reading input from a file and reading input from the console in Python?</p>
+</li>
+<li>
+<p>What are some common uses of the print() function for output in Python programs?</p>
+</li>
+</ol>
+<h1 id="answer">Answer</h1>
+<h3 id="input-and-output-functions-in-basic-python">Input and Output Functions in Basic Python</h3>
+<p>In Python, input and output functions play a crucial role in allowing interaction with users through the console, reading input from files, and writing output to files. These functions are fundamental for creating interactive applications where users can provide input and receive output.</p>
+<h4 id="1-what-are-the-input-and-output-functions-in-basic-python-used-for">1. What are the input and output functions in Basic Python used for?</h4>
+<p>Input functions in Python, such as <code>input()</code>, enable users to provide input during program execution. This input can be stored in variables for further processing. On the other hand, output functions, like <code>print()</code>, allow programmers to display information on the console or write it to files for user interaction or debugging purposes.</p>
+<p>These functions are essential for creating dynamic programs that can adapt based on user input and provide meaningful output to users or logs.</p>
+<hr />
+<h3 id="follow-up-questions">Follow-up Questions:</h3>
+<ol>
+<li><strong>How does the <code>input()</code> function enable user input in Python programs?</strong></li>
+</ol>
+<p>The <code>input()</code> function in Python prompts the user to enter a value, which is then read as a string and can be stored in a variable for processing. Here is an example:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your name: &quot;</span><span class="p">)</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hello, </span><span class="si">{</span><span class="n">user_input</span><span class="si">}</span><span class="s2">!&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<ol>
+<li>
+<p><strong>Can you explain the difference between reading input from a file and reading input from the console in Python?</strong></p>
+</li>
+<li>
+<p>Reading from a file involves opening a file, reading its contents, and processing the data.</p>
+</li>
+<li>Reading input from the console, using functions like <code>input()</code>, allows users to interact with the program during its execution.</li>
+</ol>
+<p>Here is an example of reading input from a file:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;data.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">file_content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">file_content</span><span class="p">)</span>
+</span></code></pre></div>
+<ol>
+<li>
+<p><strong>What are some common uses of the <code>print()</code> function for output in Python programs?</strong></p>
+</li>
+<li>
+<p>Displaying information to users on the console.</p>
+</li>
+<li>Writing logs or debugging information for developers.</li>
+<li>Formatting output for data analysis or visualization.</li>
+</ol>
+<p>Example of using the <code>print()</code> function:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Alice&quot;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">age</span> <span class="o">=</span> <span class="mi">30</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>In conclusion, input and output functions in Python are essential for user interaction, data processing, and communication between the program and users. By utilizing functions like <code>input()</code> and <code>print()</code>, developers can create engaging and dynamic applications.</p>
+<h1 id="question_1">Question</h1>
+<p><strong>Main question</strong>: How does the input() function in Python work?</p>
+<p><strong>Explanation</strong>: The candidate should explain the functionality of the input() function in Python, which prompts the user for input and returns the entered value as a string.</p>
+<p><strong>Follow-up questions</strong>:</p>
+<ol>
+<li>
+<p>What happens if the input() function is used without a prompt message in Python?</p>
+</li>
+<li>
+<p>How can type conversion be applied to the input() function output for numerical calculations?</p>
+</li>
+<li>
+<p>Are there any limitations or potential risks associated with using the input() function for user input in Python programs?</p>
+</li>
+</ol>
+<h1 id="answer_1">Answer</h1>
+<h3 id="input-function-in-python">Input Function in Python</h3>
+<p>The <code>input()</code> function in Python is a built-in function that allows you to interact with the user through the console by prompting the user for input. It reads the user's input as a string and returns the entered value.</p>
+<p>The basic syntax of the <code>input()</code> function is as follows:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your input: &quot;</span><span class="p">)</span>
+</span></code></pre></div></p>
+<h3 id="how-does-the-input-function-in-python-work">How does the input() function in Python work?</h3>
+<p>When the <code>input()</code> function is executed, it displays the message provided as an argument (prompt) to the user on the console. The user then enters their input which is read by the function. The input is always returned as a string, even if it is a number or another type.</p>
+<h3 id="follow-up-questions_1">Follow-up Questions</h3>
+<ul>
+<li><strong>What happens if the input() function is used without a prompt message in Python?</strong></li>
+</ul>
+<p>If the <code>input()</code> function is used without a prompt message, the function will still wait for user input but without displaying any message, making it less user-friendly as the user won't know what type of input is expected.</p>
+<ul>
+<li><strong>How can type conversion be applied to the input() function output for numerical calculations?</strong></li>
+</ul>
+<p>To perform numerical calculations on the input obtained from the <code>input()</code> function, you can apply type conversion to convert the string input to the desired numerical type such as int or float. Here is an example:
+  <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter a number: &quot;</span><span class="p">)</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span>  <span class="c1"># Convert user input to integer</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">result</span> <span class="o">=</span> <span class="n">num</span> <span class="o">*</span> <span class="mi">2</span>  <span class="c1"># Perform numerical calculation</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Result:&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+</span></code></pre></div></p>
+<ul>
+<li><strong>Are there any limitations or potential risks associated with using the input() function for user input in Python programs?</strong></li>
+</ul>
+<p>Yes, there are some limitations and risks associated with using the <code>input()</code> function:
+  - <strong>Security Risks:</strong> Using <code>input()</code> directly can lead to security vulnerabilities such as code injection.
+  - <strong>Type Errors:</strong> Since <code>input()</code> always returns a string, type errors may occur if the input is not properly converted to the expected type.
+  - <strong>No Error Checking:</strong> The function does not perform any validation on the entered input, so it is prone to errors if the user enters unexpected data.</p>
+<p>In summary, while the <code>input()</code> function is convenient for obtaining user input, it is important to handle the input carefully to avoid potential risks and ensure the reliability of the program.</p>
+<h1 id="question_2">Question</h1>
+<p><strong>Main question</strong>: What is the purpose of the print() function in Python?</p>
+<p><strong>Explanation</strong>: The candidate should discuss how the print() function is used to display output to the console in Python, supporting different formatting options and handling multiple arguments for varied output.</p>
+<p><strong>Follow-up questions</strong>:</p>
+<ol>
+<li>
+<p>How can the print() function be customized to include variables, expressions, or formatted strings in the output?</p>
+</li>
+<li>
+<p>What are some practical examples where the end and sep parameters of the print() function can be utilized effectively?</p>
+</li>
+<li>
+<p>In what ways does the print() function contribute to enhancing the user experience and readability of Python programs?</p>
+</li>
+</ol>
+<h1 id="answer_2">Answer</h1>
+<h3 id="answer_3">Answer:</h3>
+<p>The <code>print()</code> function in Python is an essential tool for displaying output to the console. It allows developers to showcase results, messages, or information during program execution. The primary purpose of the <code>print()</code> function can be summarized as follows:</p>
+<ul>
+<li>
+<p><strong>Display Output:</strong> The <code>print()</code> function enables users to showcase text, variables, expressions, or results to the console. This output can be utilized for debugging, providing information to the user, or validating the program's execution flow.</p>
+</li>
+<li>
+<p><strong>Supports Multiple Arguments:</strong> Users can pass multiple arguments to the <code>print()</code> function, which will be concatenated and displayed in the console. This feature facilitates the display of dynamic content by combining various elements seamlessly.</p>
+</li>
+<li>
+<p><strong>Formatting Options:</strong> The <code>print()</code> function supports formatting options to enhance the output's appearance. By incorporating formatted strings, users can control the alignment, precision, and appearance of numerical and string values displayed through <code>print()</code>.</p>
+</li>
+</ul>
+<h4 id="code-example">Code Example:</h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Demonstrating the basic usage of the print() function</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Alice&quot;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">age</span> <span class="o">=</span> <span class="mi">30</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello,&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="s2">&quot;! You are&quot;</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="s2">&quot;years old.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="follow-up-questions_2">Follow-up questions:</h3>
+<ul>
+<li><em>How can the print() function be customized to include variables, expressions, or formatted strings in the output?</em></li>
+</ul>
+<p>One can customize the <code>print()</code> function in various ways to incorporate variables, expressions, and formatted strings into the output display:</p>
+<div class="language-text highlight"><pre><span></span><code>- Utilize f-strings: By using f-strings, developers can embed variables and expressions directly within the string to be printed. This method simplifies string interpolation and enhances code readability.
+
+- Format specifiers: Python supports format specifiers that allow users to control the appearance of variables within the print statement. Utilizing specifiers like `%s` for strings or `%d` for integers ensures consistent formatting.
+
+- Concatenation: Users can concatenate strings and variables within the `print()` statement to create customized output. This approach is useful when combining text with variable values without complex formatting requirements.
+</code></pre></div>
+<h4 id="code-example_1">Code Example:</h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Customizing the print() function with variables, expressions, and formatted strings</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Bob&quot;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">age</span> <span class="o">=</span> <span class="mi">25</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">height</span> <span class="o">=</span> <span class="mf">1.8</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old and is </span><span class="si">{</span><span class="n">height</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> meters tall.&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<ul>
+<li><em>What are some practical examples where the <code>end</code> and <code>sep</code> parameters of the <code>print()</code> function can be utilized effectively?</em></li>
+</ul>
+<p>The <code>end</code> and <code>sep</code> parameters offer additional customization options for the <code>print()</code> function:</p>
+<div class="language-text highlight"><pre><span></span><code>- `end`: This parameter specifies the character(s) to append at the end of the print statement. By default, `end=&#39;\n&#39;` adds a newline character but can be modified for specific formatting requirements.
+
+- `sep`: The `sep` parameter allows users to define the separator between arguments passed to the `print()` function. This feature is beneficial when formatting output with distinct delimiters.
+</code></pre></div>
+<h4 id="code-example_2">Code Example:</h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Utilizing the `end` and `sep` parameters in the print() function</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;cherry&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; | &quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;, &quot;</span><span class="p">)</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="c1"># Output: apple, banana, cherry |</span>
+</span></code></pre></div>
+<ul>
+<li><em>In what ways does the print() function contribute to enhancing the user experience and readability of Python programs?</em></li>
+</ul>
+<p>The <code>print()</code> function plays a crucial role in enhancing the user experience and readability of Python programs:</p>
+<div class="language-text highlight"><pre><span></span><code>- Real-time Feedback: By displaying intermediate outputs, users can track the program&#39;s progress and identify potential errors or unexpected results.
+
+- Debugging Assistance: Output generated through `print()` aids in troubleshooting code by highlighting variable values, control flow, or specific checkpoints during execution.
+
+- User Interaction: Interactive applications leverage `print()` to communicate with users, prompt for input, or provide informative messages, contributing to a more engaging user experience.
+</code></pre></div>
+<p>In summary, the <code>print()</code> function serves as a versatile tool in Python programming, facilitating output display, customization, and user interaction within applications.</p>
+<h1 id="question_3">Question</h1>
+<p><strong>Main question</strong>: How can input/output operations be performed with files in Python?</p>
+<p><strong>Explanation</strong>: The candidate should explain the methods for reading input from files using functions like open(), read(), and readline(), as well as writing output to files using functions like write(), writelines(), and close().</p>
+<p><strong>Follow-up questions</strong>:</p>
+<ol>
+<li>
+<p>What are the different modes in which a file can be opened in Python for performing read and write operations?</p>
+</li>
+<li>
+<p>Can you illustrate how exception handling can be implemented when working with file input/output operations in Python programs?</p>
+</li>
+<li>
+<p>What considerations should be taken into account when dealing with file paths and file permissions in Python file operations?</p>
+</li>
+</ol>
+<h1 id="answer_4">Answer</h1>
+<h1 id="how-can-inputoutput-operations-be-performed-with-files-in-python">How can input/output operations be performed with files in Python?</h1>
+<p>In Python, input/output operations with files can be performed using various built-in functions and methods. The primary functions used for file input are <code>open()</code>, <code>read()</code>, and <code>readline()</code>, while for file output, <code>write()</code>, <code>writelines()</code>, and <code>close()</code> functions are commonly used.</p>
+<ol>
+<li>
+<p><strong>Opening a file</strong>: The <code>open()</code> function is used to open a file in Python. It takes two arguments: the file path and the mode in which the file should be opened. The modes determine whether the file will be read, written, or both. For example, to open a file for reading:
+   <div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>Reading from a file</strong>:</p>
+</li>
+<li>The <code>read()</code> method reads the entire contents of the file as a string.</li>
+<li>
+<p>The <code>readline()</code> method reads one line at a time from the file.
+   <div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">line</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>Writing to a file</strong>:</p>
+</li>
+<li>The <code>write()</code> method writes a string to the file.</li>
+<li>
+<p>The <code>writelines()</code> method writes a list of strings to the file.
+   <div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">file</span><span class="o">.</span><span class="n">writelines</span><span class="p">([</span><span class="s2">&quot;Line 1</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Line 2</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">])</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>Closing a file</strong>:
+   It is essential to close the file after performing read or write operations to release system resources.
+   <div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></code></pre></div></p>
+</li>
+</ol>
+<h1 id="follow-up-questions_3">Follow-up questions:</h1>
+<ul>
+<li><strong>What are the different modes in which a file can be opened in Python for performing read and write operations?</strong>
+  In Python, files can be opened in different modes based on the operations you want to perform:</li>
+<li><code>'r'</code>: Open file for reading</li>
+<li><code>'w'</code>: Open file for writing. If the file already exists, it will be truncated.</li>
+<li><code>'a'</code>: Open file for appending. The file pointer will be at the end of the file for writing.</li>
+<li><code>'r+'</code>: Open file for reading and writing.</li>
+<li><code>'w+'</code>: Open file for reading and writing. It will truncate the file if it already exists.</li>
+<li>
+<p><code>'a+'</code>: Open file for reading and writing. It will append to the file if it already exists.</p>
+</li>
+<li>
+<p><strong>Can you illustrate how exception handling can be implemented when working with file input/output operations in Python programs?</strong>
+  While working with file operations in Python, it is crucial to handle exceptions to prevent program crashes and handle errors gracefully. Here's an example of implementing exception handling:
+  <div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="k">try</span><span class="p">:</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>    <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;file.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="n">content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    <span class="c1"># Perform operations with file content</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;File not found.&quot;</span><span class="p">)</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="k">except</span> <span class="ne">IOError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I/O error:&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="k">finally</span><span class="p">:</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>    <span class="k">if</span> <span class="s1">&#39;file&#39;</span> <span class="ow">in</span> <span class="nb">locals</span><span class="p">():</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>        <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>What considerations should be taken into account when dealing with file paths and file permissions in Python file operations?</strong>
+  When working with file paths and permissions in Python file operations, the following considerations should be kept in mind:</p>
+</li>
+<li>Ensure proper handling of absolute and relative file paths to locate files correctly.</li>
+<li>Check for file existence before performing operations to avoid FileNotFoundError.</li>
+<li>Handle file permissions to prevent unauthorized access and potential security risks.</li>
+<li>Use appropriate file modes to specify whether the file should be read, written, or both.</li>
+<li>Consider platform-specific file path conventions (e.g., using backslashes <code>\</code> on Windows and forward slashes <code>/</code> on Unix-based systems).</li>
+</ul>
+<h1 id="question_4">Question</h1>
+<p><strong>Main question</strong>: How do input and output functions in Python impact the overall user experience of an application?</p>
+<p><strong>Explanation</strong>: The candidate should discuss the significance of efficient and user-friendly input and output functions in Python for creating interactive applications, enhancing user engagement, and ensuring seamless data interaction.</p>
+<p><strong>Follow-up questions</strong>:</p>
+<ol>
+<li>
+<p>How can the error-handling capabilities of input and output functions improve the reliability and robustness of Python applications?</p>
+</li>
+<li>
+<p>In what ways do input and output functions contribute to the versatility and scalability of Python programs across different platforms?</p>
+</li>
+<li>
+<p>Can you provide examples of best practices for designing and implementing input and output mechanisms to optimize user interaction and data flow in Python applications?</p>
+</li>
+</ol>
+<h1 id="answer_5">Answer</h1>
+<h1 id="main-question">Main question:</h1>
+<h3 id="how-do-input-and-output-functions-in-python-impact-the-overall-user-experience-of-an-application">How do input and output functions in Python impact the overall user experience of an application?</h3>
+<p>Input and output functions play a crucial role in shaping the user experience of an application in Python. These functions enable the application to interact with users by receiving input from various sources and providing output in different formats. Efficient input and output mechanisms are essential for creating interactive applications, engaging users effectively, and ensuring smooth data flow. </p>
+<h4 id="significance-of-input-and-output-functions">Significance of input and output functions:</h4>
+<ul>
+<li><strong>User interaction</strong>: Input functions allow users to provide data or commands to the application, making it interactive and responsive.</li>
+<li><strong>Data presentation</strong>: Output functions present information, results, or feedback to users in a readable format, enhancing the user experience.</li>
+<li><strong>Error handling</strong>: Proper error handling in input and output functions improves the reliability and robustness of the application by gracefully handling unexpected inputs or output failures.</li>
+</ul>
+<p>In Python, input functions like <code>input()</code> and output functions like <code>print()</code> are commonly used to interact with users. These functions help in collecting user input, displaying results, and communicating with users effectively.</p>
+<h1 id="follow-up-questions_4">Follow-up questions:</h1>
+<h3 id="how-can-the-error-handling-capabilities-of-input-and-output-functions-improve-the-reliability-and-robustness-of-python-applications">How can the error-handling capabilities of input and output functions improve the reliability and robustness of Python applications?</h3>
+<p>Error handling is essential for ensuring that Python applications can gracefully handle unexpected situations, invalid inputs, or output failures. Here's how error-handling capabilities in input and output functions can enhance the reliability and robustness of Python applications:</p>
+<ul>
+<li><strong>Try-except blocks</strong>: Wrapping input operations in try-except blocks allows catching and handling exceptions, preventing the application from crashing.</li>
+<li><strong>Input validation</strong>: Validating user input before processing it helps in preventing errors and ensuring that only correct data is accepted.</li>
+<li><strong>Graceful error messages</strong>: Providing informative error messages to users when errors occur enhances the user experience and helps in troubleshooting issues effectively.</li>
+</ul>
+<p>By incorporating robust error-handling mechanisms in input and output functions, Python applications can maintain stability, handle edge cases gracefully, and provide a better user experience.</p>
+<h3 id="in-what-ways-do-input-and-output-functions-contribute-to-the-versatility-and-scalability-of-python-programs-across-different-platforms">In what ways do input and output functions contribute to the versatility and scalability of Python programs across different platforms?</h3>
+<p>Input and output functions in Python contribute significantly to the versatility and scalability of programs across different platforms by facilitating data exchange, user interaction, and portability. Here are some ways in which input and output functions enhance the versatility and scalability of Python programs:</p>
+<ul>
+<li><strong>File handling</strong>: Input and output functions enable reading from and writing to files, allowing programs to process external data and store results.</li>
+<li><strong>Standard streams</strong>: Python's standard input/output streams (stdin, stdout, stderr) provide a consistent interface for communication, making the programs platform-independent.</li>
+<li><strong>Network communication</strong>: Input and output functions support network communication, enabling Python programs to interact with remote servers, APIs, or other applications.</li>
+<li><strong>Compatibility</strong>: By adhering to standard input/output practices, Python programs can run seamlessly on different operating systems and environments, enhancing portability.</li>
+</ul>
+<p>Overall, input and output functions play a vital role in making Python programs versatile, scalable, and interoperable across various platforms.</p>
+<h3 id="can-you-provide-examples-of-best-practices-for-designing-and-implementing-input-and-output-mechanisms-to-optimize-user-interaction-and-data-flow-in-python-applications">Can you provide examples of best practices for designing and implementing input and output mechanisms to optimize user interaction and data flow in Python applications?</h3>
+<p>Designing efficient input and output mechanisms is essential for optimizing user interaction and data flow in Python applications. Here are some best practices for implementing input and output functions:</p>
+<ul>
+<li><strong>Input validation</strong>: Validate user input to ensure data integrity and prevent security vulnerabilities.</li>
+<li><strong>Feedback mechanisms</strong>: Provide meaningful feedback to users through output messages, prompts, or progress indicators.</li>
+<li><strong>Error handling</strong>: Implement robust error-handling strategies to manage exceptions and edge cases effectively.</li>
+<li><strong>Logging</strong>: Use logging mechanisms to record input/output operations, track application behavior, and troubleshoot issues.</li>
+<li><strong>Optimized output</strong>: Format output data in a clear and organized manner for easy readability and comprehension by users.</li>
+</ul>
+<p>By following these best practices, developers can create Python applications with efficient input and output mechanisms that enhance user experience, ensure data accuracy, and improve overall performance.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../date_and_time_functions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Date and Time Functions">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Date and Time Functions
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../built_in_sorting_and_searching/" class="md-footer__link md-footer__link--next" aria-label="Next: Built-in Sorting and Searching">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Built-in Sorting and Searching
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://learning.teachme.codes" target="_blank" rel="noopener" title="learning.teachme.codes" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/teachmecodes" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/teachmecodes" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/c/teachmecodes" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+        <script src="../mathjax-config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1990 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide to learning Python programming language">
+      
+      
+        <meta name="author" content="Teach Me Codes">
+      
+      
+        <link rel="canonical" href="https://learning.teachme.codes/functions_and_lambdas/">
+      
+      
+        <link rel="prev" href="../control_flow_statements/">
+      
+      
+        <link rel="next" href="../exception_handling/">
+      
+      
+      <link rel="icon" href="../assets/logo.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+    
+    
+      
+        <title>Functions and Lambdas - Learning Python</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-ECS7B3X8JM"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-ECS7B3X8JM",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-ECS7B3X8JM",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#question" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Learning Python" class="md-header__button md-logo" aria-label="Learning Python" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Learning Python
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Functions and Lambdas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8v2m9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/teach-me-codes/python" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../python_syntax_and_semantics/" class="md-tabs__link">
+          
+  
+    
+  
+  Basic Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../generators_and_iterators/" class="md-tabs__link">
+          
+  
+    
+  
+  Intermediate Python
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../object_oriented_functions/" class="md-tabs__link">
+          
+  
+    
+  
+  Advanced Python
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Learning Python" class="md-nav__button md-logo" aria-label="Learning Python" data-md-component="logo">
+      
+  <img src="../assets/logo.png" alt="logo">
+
+    </a>
+    Learning Python
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/teach-me-codes/python" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Basic Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Basic Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_syntax_and_semantics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python Syntax and Semantics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../variables_and_data_types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables and Data Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../control_flow_statements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Control Flow Statements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Functions and Lambdas
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../exception_handling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exception Handling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file_io_operations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File IO Operations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../list_comprehensions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    List Comprehensions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Intermediate Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Intermediate Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generators_and_iterators/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generators and Iterators
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../decorators_in_python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Decorators in Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../context_managers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Context Managers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modules_and_packages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modules and Packages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../virtual_environments/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Virtual Environments
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_standard_library/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python Standard Library
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../regular_expressions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regular Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using_map_filter_reduce/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using map_filter_reduce
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../string_manipulation_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    String Manipulation Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../numeric_and_math_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Numeric and Math Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data_structure_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Structure Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../date_and_time_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Date and Time Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../input_and_output_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Input and Output Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built_in_sorting_and_searching/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Built-in Sorting and Searching
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../type_conversion_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Type Conversion Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Advanced Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../object_oriented_functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Object-Oriented Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../classes_and_objects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes and Objects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../inheritance_and_polymorphism/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Inheritance and Polymorphism
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../encapsulation_and_abstraction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Encapsulation and Abstraction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../magic_methods_and_operator_overloading/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Magic Methods and Operator Overloading
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../composition_and_aggregation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Composition and Aggregation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../class_and_static_methods/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Class and Static Methods
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../properties_and_descriptors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Properties and Descriptors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abstract_base_classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Abstract Base Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../metaclasses_in_python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Metaclasses in Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../unit_testing_in_python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unit Testing in Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../debugging_techniques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Debugging Techniques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../profiling_and_optimization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Profiling and Optimization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concurrency_and_parallelism/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concurrency and Parallelism
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../asynchronous_programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Asynchronous Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/teach-me-codes/python/edit/master/docs/functions_and_lambdas.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/teach-me-codes/python/raw/master/docs/functions_and_lambdas.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<h1 id="question">Question</h1>
+<p><strong>Main question</strong>: What is a lambda function in Python and how is it different from a regular function?</p>
+<p><strong>Explanation</strong>: Explain the concept of lambda functions as anonymous functions that can be defined in a single line without a name. Discuss the differences between lambda functions and regular functions in terms of syntax, usage, and complexity.</p>
+<p><strong>Follow-up questions</strong>:</p>
+<ol>
+<li>
+<p>Can you provide an example of when it is more suitable to use a lambda function instead of a regular function?</p>
+</li>
+<li>
+<p>How do lambda functions facilitate quick and concise code implementation in Python?</p>
+</li>
+<li>
+<p>In what scenarios might you choose a regular function over a lambda function for better code readability and maintainability?</p>
+</li>
+</ol>
+<h1 id="answer">Answer</h1>
+<h3 id="main-question">Main Question:</h3>
+<p>A lambda function in Python is a small anonymous function that can have any number of arguments, but can only have one expression. Lambda functions are defined using the <code>lambda</code> keyword followed by the arguments, a colon <code>:</code>, and the expression. They are typically used for one-time operations where defining a named function would be overkill.</p>
+<p>The general syntax of a lambda function is:
+$$
+\lambda \text{arguments}: \text{expression}
+$$</p>
+<p>Lambda functions are different from regular functions in the following ways:
+- <strong>Anonymous</strong>: Lambda functions do not have a name, unlike regular functions which are defined using the <code>def</code> keyword.
+- <strong>Single Expression</strong>: Lambda functions can only contain a single expression, while regular functions can have multiple expressions and statements.
+- <strong>Short-lived</strong>: Lambda functions are often used for small operations within a single line of code, whereas regular functions are suitable for more complex and reusable tasks.
+- <strong>Usage</strong>: Lambda functions are typically used as arguments to higher-order functions like <code>map()</code>, <code>filter()</code>, and <code>reduce()</code>.</p>
+<h3 id="follow-up-questions">Follow-up Questions:</h3>
+<ul>
+<li><strong>Can you provide an example of when it is more suitable to use a lambda function instead of a regular function?</strong></li>
+<li>
+<p>Lambda functions are more suitable when a simple operation needs to be applied to every element of a list using functions like <code>map()</code> or when a quick calculation is required for sorting elements using <code>sorted()</code>.</p>
+</li>
+<li>
+<p><strong>How do lambda functions facilitate quick and concise code implementation in Python?</strong></p>
+</li>
+<li>
+<p>Lambda functions allow you to define functions inline without the need to give them a name, making the code more concise and easier to read, especially in scenarios where the function is short and its purpose is evident.</p>
+</li>
+<li>
+<p><strong>In what scenarios might you choose a regular function over a lambda function for better code readability and maintainability?</strong></p>
+</li>
+<li>Regular functions are preferred over lambda functions when the logic inside the function is complex and requires multiple lines of code. Using a named function in such cases can improve code readability and maintainability by providing a descriptive function name and allowing for easier debugging.</li>
+</ul>
+<h1 id="question_1">Question</h1>
+<p><strong>Main question</strong>: What are the advantages of using lambda functions in Python programming?</p>
+<p><strong>Explanation</strong>: Discuss the benefits of using lambda functions, such as conciseness, readability, and their utility in functional programming paradigms like map, filter, and reduce.</p>
+<p><strong>Follow-up questions</strong>:</p>
+<ol>
+<li>
+<p>How do lambda functions promote a more functional programming style in Python code?</p>
+</li>
+<li>
+<p>Can you explain how lambda functions contribute to reducing the need for auxiliary functions and enhancing code reusability?</p>
+</li>
+<li>
+<p>In what ways can lambda functions simplify tasks like sorting, filtering, and transforming data structures in Python programs?</p>
+</li>
+</ol>
+<h1 id="answer_1">Answer</h1>
+<h3 id="main-question-what-are-the-advantages-of-using-lambda-functions-in-python-programming">Main question: What are the advantages of using lambda functions in Python programming?</h3>
+<p>Lambda functions in Python offer several advantages:</p>
+<ol>
+<li><strong>Conciseness</strong>:</li>
+<li>Lambda functions allow you to define functions in a single line of code, making them concise and easy to read.</li>
+<li>
+<p>They are particularly useful when you need a simple function for a short period of time and don't want to define a full function using the <code>def</code> keyword.</p>
+</li>
+<li>
+<p><strong>Readability</strong>:</p>
+</li>
+<li>Lambda functions are often used for operations where the function logic is straightforward and can be easily understood in a compact form.</li>
+<li>
+<p>They help in reducing the overall code base, making it more readable and focused on the essential parts of the logic.</p>
+</li>
+<li>
+<p><strong>Functional Programming</strong>:</p>
+</li>
+<li>Lambda functions play a key role in functional programming paradigms like <code>map</code>, <code>filter</code>, and <code>reduce</code>.</li>
+<li>They enable you to write more functional-style code, where functions are treated as first-class citizens and can be passed around as arguments to other functions.</li>
+</ol>
+<h3 id="follow-up-questions_1">Follow-up questions:</h3>
+<h4 id="how-do-lambda-functions-promote-a-more-functional-programming-style-in-python-code">How do lambda functions promote a more functional programming style in Python code?</h4>
+<ul>
+<li>Lambda functions promote a more functional programming style in Python by:</li>
+<li>Allowing functions to be passed as arguments to other functions, enabling higher-order functions.</li>
+<li>Supporting operations like <code>map</code>, <code>filter</code>, and <code>reduce</code> which are fundamental to functional programming.</li>
+<li>Encouraging the use of pure functions, which do not have side effects and depend only on their inputs.</li>
+</ul>
+<h4 id="can-you-explain-how-lambda-functions-contribute-to-reducing-the-need-for-auxiliary-functions-and-enhancing-code-reusability">Can you explain how lambda functions contribute to reducing the need for auxiliary functions and enhancing code reusability?</h4>
+<ul>
+<li>Lambda functions help in reducing the need for auxiliary functions by:</li>
+<li>Allowing the creation of small, one-off functions without the need to define a separate function.</li>
+<li>Eliminating the clutter of additional function definitions for simple operations.</li>
+<li>Promoting code reusability by enabling functions to be defined inline and used wherever needed without explicitly naming them.</li>
+</ul>
+<h4 id="in-what-ways-can-lambda-functions-simplify-tasks-like-sorting-filtering-and-transforming-data-structures-in-python-programs">In what ways can lambda functions simplify tasks like sorting, filtering, and transforming data structures in Python programs?</h4>
+<ul>
+<li>Lambda functions simplify tasks like sorting, filtering, and transforming data structures by:</li>
+<li>Providing a concise way to express the key function for sorting algorithms through the <code>key</code> parameter in sorting functions like <code>sorted()</code>.</li>
+<li>Enabling quick filtering of data using conditions specified in the lambda function when using functions like <code>filter()</code>.</li>
+<li>Facilitating transformations of data structures by defining custom operations inline using lambda functions with functions like <code>map()</code>. </li>
+</ul>
+<p>Overall, lambda functions are versatile tools in Python that enhance code expressiveness, encourage functional programming principles, and simplify common data manipulation tasks efficiently.</p>
+<h1 id="question_2">Question</h1>
+<p><strong>Main question</strong>: How are lambda functions typically used in conjunction with built-in higher-order functions like map, filter, and reduce?</p>
+<p><strong>Explanation</strong>: Describe how lambda functions can be passed as arguments to higher-order functions like map, filter, and reduce to perform operations on iterables more efficiently and compactly.</p>
+<p><strong>Follow-up questions</strong>:</p>
+<ol>
+<li>
+<p>What advantages does using lambda functions with higher-order functions offer in terms of code expressiveness and functional programming practices?</p>
+</li>
+<li>
+<p>Can you compare the usage of lambda functions with list comprehensions for transforming or filtering data in Python?</p>
+</li>
+<li>
+<p>How does the readability and maintainability of code change when lambda functions are employed with built-in higher-order functions compared to traditional loops or functions?</p>
+</li>
+</ol>
+<h1 id="answer_2">Answer</h1>
+<h3 id="how-are-lambda-functions-typically-used-in-conjunction-with-built-in-higher-order-functions-like-map-filter-and-reduce">How are lambda functions typically used in conjunction with built-in higher-order functions like map, filter, and reduce?</h3>
+<p>In Python, lambda functions are often used in conjunction with built-in higher-order functions like <code>map</code>, <code>filter</code>, and <code>reduce</code> to perform operations on iterables in a more concise and efficient manner.</p>
+<h4 id="lambda-functions">Lambda Functions:</h4>
+<ul>
+<li>Lambda functions are anonymous functions defined using the <code>lambda</code> keyword.</li>
+<li>They are short, one-line functions that can take any number of arguments but can only have one expression.</li>
+<li>Lambda functions are particularly useful when a small function needs to be defined inline without the need for a separate function definition.</li>
+</ul>
+<h4 id="higher-order-functions">Higher-Order Functions:</h4>
+<ul>
+<li>Higher-order functions are functions that can take other functions as arguments.</li>
+<li>Examples of higher-order functions in Python include <code>map</code>, <code>filter</code>, and <code>reduce</code>.</li>
+</ul>
+<h4 id="example-usage-with-map">Example Usage with <code>map</code>:</h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Using map with lambda to square each element in a list</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">squared_numbers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">numbers</span><span class="p">))</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">squared_numbers</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="example-usage-with-filter">Example Usage with <code>filter</code>:</h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Using filter with lambda to filter even numbers</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">even_numbers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">numbers</span><span class="p">))</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">even_numbers</span><span class="p">)</span>
+</span></code></pre></div>
+<h4 id="example-usage-with-reduce">Example Usage with <code>reduce</code>:</h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">reduce</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1"># Using reduce with lambda to calculate the sum of elements in a list</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nb">sum</span> <span class="o">=</span> <span class="n">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">,</span> <span class="n">numbers</span><span class="p">)</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="follow-up-questions_2">Follow-up questions:</h3>
+<ul>
+<li>What advantages does using lambda functions with higher-order functions offer in terms of code expressiveness and functional programming practices?</li>
+<li>Can you compare the usage of lambda functions with list comprehensions for transforming or filtering data in Python?</li>
+<li>How does the readability and maintainability of code change when lambda functions are employed with built-in higher-order functions compared to traditional loops or functions?</li>
+</ul>
+<p>Let's address these follow-up questions:</p>
+<h3 id="advantages-of-using-lambda-functions-with-higher-order-functions">Advantages of Using Lambda Functions with Higher-Order Functions:</h3>
+<ul>
+<li><strong>Code Expressiveness</strong>: Lambda functions make the code more concise by defining functions inline, reducing the need for separate function definitions.</li>
+<li><strong>Functional Programming Practices</strong>: Using lambda functions encourages a functional programming paradigm by treating functions as first-class citizens.</li>
+</ul>
+<h3 id="comparison-with-list-comprehensions">Comparison with List Comprehensions:</h3>
+<ul>
+<li><strong>Lambda Functions</strong>: Lambda functions are more flexible and can be used with any higher-order function, providing a more general-purpose approach.</li>
+<li><strong>List Comprehensions</strong>: List comprehensions are often more readable for simple transformations or filters but can sometimes be less expressive than lambda functions in complex scenarios.</li>
+</ul>
+<h3 id="readability-and-maintainability">Readability and Maintainability:</h3>
+<ul>
+<li><strong>Lambda Functions with Higher-Order Functions</strong>:</li>
+<li><strong>Readability</strong>: Lambda functions can sometimes make the code harder to read, especially for beginners or unfamiliar with functional programming concepts.</li>
+<li>
+<p><strong>Maintainability</strong>: While lambda functions offer conciseness, they can lead to less maintainable code if overused or if the logic becomes too complex.</p>
+</li>
+<li>
+<p><strong>Traditional Loops or Functions</strong>:</p>
+</li>
+<li><strong>Readability</strong>: Traditional loops or functions may be more readable for those not familiar with lambda functions or functional programming.</li>
+<li><strong>Maintainability</strong>: Well-structured loops or functions may be easier to maintain in the long run, especially for larger codebases with multiple contributors.</li>
+</ul>
+<p>Overall, the choice between using lambda functions with higher-order functions or traditional loops/functions depends on the specific use case, readability requirements, and the familiarity of the team with functional programming concepts.</p>
+<h1 id="question_3">Question</h1>
+<p><strong>Main question</strong>: Can lambda functions have multiple arguments and return values in Python?</p>
+<p><strong>Explanation</strong>: Explain how lambda functions can accept multiple arguments separated by commas and evaluate expressions to return results, enabling more flexible and customized operations in Python applications.</p>
+<p><strong>Follow-up questions</strong>:</p>
+<ol>
+<li>
+<p>How are the limitations of lambda functions in terms of multiple arguments and return values different from those of regular functions?</p>
+</li>
+<li>
+<p>What considerations should one keep in mind when using lambda functions with multiple arguments to ensure code clarity and functionality?</p>
+</li>
+<li>
+<p>In what scenarios might you prefer defining a regular function over a lambda function to handle complex logic involving multiple parameters and return values?</p>
+</li>
+</ol>
+<h1 id="answer_3">Answer</h1>
+<h3 id="main-question-can-lambda-functions-have-multiple-arguments-and-return-values-in-python">Main question: Can lambda functions have multiple arguments and return values in Python?</h3>
+<p>Yes, lambda functions in Python can accept multiple arguments and return values. Lambda functions are defined using the <code>lambda</code> keyword, followed by a list of arguments separated by commas, a colon, and the expression to evaluate. </p>
+<p>The general syntax of a lambda function with multiple arguments is as follows:</p>
+<div class="arithmatex">\[ \text{lambda arguments: expression} \]</div>
+<p>For example, a lambda function with two arguments <code>x</code> and <code>y</code> that returns the sum of the arguments can be defined as:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">addition</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">result</span> <span class="o">=</span> <span class="n">addition</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>  <span class="c1"># Output: 8</span>
+</span></code></pre></div>
+<p>Lambda functions are particularly useful when a simple operation or transformation needs to be applied on the fly. They are concise and can be used in situations where defining a full-fledged function is not required.</p>
+<h3 id="follow-up-questions_3">Follow-up questions:</h3>
+<ul>
+<li>
+<p><strong>How are the limitations of lambda functions in terms of multiple arguments and return values different from those of regular functions?</strong></p>
+</li>
+<li>
+<p>Lambda functions are restricted to a single expression, making them suitable for simple operations, while regular functions in Python can contain multiple statements and have more complex logic.</p>
+</li>
+<li>
+<p>Regular functions have more robust error handling capabilities and can include documentation strings, making them more suitable for larger, more detailed tasks compared to lambda functions.</p>
+</li>
+<li>
+<p><strong>What considerations should one keep in mind when using lambda functions with multiple arguments to ensure code clarity and functionality?</strong></p>
+</li>
+<li>
+<p>Keep lambda functions concise and focused on a specific task to maintain code readability.</p>
+</li>
+<li>
+<p>Avoid using lambda functions for complicated logic or tasks that require multiple lines of code, as this can lead to reduced clarity and maintainability.</p>
+</li>
+<li>
+<p><strong>In what scenarios might you prefer defining a regular function over a lambda function to handle complex logic involving multiple parameters and return values?</strong></p>
+</li>
+<li>
+<p>When the function requires conditional statements, loops, or complex algorithms that cannot be expressed in a single expression.</p>
+</li>
+<li>For tasks that involve extensive error handling, input validation, or require extensive documentation to explain the logic and functionality of the function.</li>
+</ul>
+<p>In summary, while lambda functions are powerful tools for concise and simple operations in Python, regular functions are better suited for handling more complex logic and tasks that require multiple parameters, conditional statements, and error handling. It is essential to choose the appropriate tool based on the specific requirements and complexity of the task at hand.</p>
+<h1 id="question_4">Question</h1>
+<p><strong>Main question</strong>: In what situations would you recommend using lambda functions over regular functions in Python?</p>
+<p><strong>Explanation</strong>: Provide insights into the specific scenarios where lambda functions are particularly well-suited, such as when quick, one-time operations are required, or when functional programming constructs are preferred over traditional procedural approaches.</p>
+<p><strong>Follow-up questions</strong>:</p>
+<ol>
+<li>
+<p>How do lambda functions enhance code expressiveness and maintainability in functional programming paradigms like recursion or list processing?</p>
+</li>
+<li>
+<p>Can you discuss any real-world examples where lambda functions have demonstrated clear advantages over regular functions in Python applications?</p>
+</li>
+<li>
+<p>What factors should be considered when deciding between lambda functions and regular functions for incorporating functional programming principles in Python code?</p>
+</li>
+</ol>
+<h1 id="answer_4">Answer</h1>
+<h1 id="main-question_1">Main Question:</h1>
+<p>Lambda functions in Python are particularly useful in scenarios where quick, simple, and anonymous functions are required. They are often recommended over regular functions in the following situations:</p>
+<ol>
+<li>
+<p><strong>Quick One-time Operations</strong>: When you need to perform a simple operation that doesn't require creating a named function, lambda functions shine. Instead of defining a separate function, you can use lambda functions for on-the-fly operations.</p>
+</li>
+<li>
+<p><strong>Functional Programming</strong>: In functional programming paradigms where functions are treated as first-class citizens, lambda functions provide a concise way to express functions without the need for formal function definition. They are well-suited for tasks like mapping, filtering, and reducing.</p>
+</li>
+<li>
+<p><strong>Conciseness</strong>: Lambda functions are more concise than regular functions, especially for small functions that are used infrequently. They help in reducing the clutter in the code and make it more readable.</p>
+</li>
+<li>
+<p><strong>Situations Requiring Clean-up</strong>: In scenarios where cleanup is not necessary or doesn't add value, lambda functions are preferred. They avoid cluttering the namespace with unnecessary function names.</p>
+</li>
+</ol>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Example of using lambda functions for quick operations</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">addition</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">result</span> <span class="o">=</span> <span class="n">addition</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>  <span class="c1"># Output: 7</span>
+</span></code></pre></div>
+<hr />
+<h1 id="follow-up-questions_4">Follow-up questions:</h1>
+<ol>
+<li>
+<p><strong>How do lambda functions enhance code expressiveness and maintainability in functional programming paradigms like recursion or list processing?</strong></p>
+</li>
+<li>
+<p>Lambda functions improve code expressiveness by allowing the definition of functions inline where they are used. This eliminates the need for naming functions that are only used in a specific context, making the code more readable.</p>
+</li>
+<li>
+<p>In recursion, lambda functions can be passed as arguments to other functions, simplifying the code structure. For list processing operations like map, filter, and reduce, lambda functions provide a compact and clear way to specify the operation to be performed on each element.</p>
+</li>
+<li>
+<p><strong>Can you discuss any real-world examples where lambda functions have demonstrated clear advantages over regular functions in Python applications?</strong></p>
+</li>
+<li>
+<p>One common example is using lambda functions with the <code>map</code> function to apply a transformation to each element of a list. This is often cleaner and more concise than defining a separate named function.</p>
+</li>
+<li>
+<p>Another example is in sorting operations where lambda functions can be used as the key parameter to specify custom sorting criteria without the need to define a separate named function.</p>
+</li>
+<li>
+<p><strong>What factors should be considered when deciding between lambda functions and regular functions for incorporating functional programming principles in Python code?</strong></p>
+</li>
+<li>
+<p><strong>Complexity</strong>: For complex functions that require multiple lines of code or have intricate logic, regular functions may be more appropriate for readability and maintainability.</p>
+</li>
+<li>
+<p><strong>Reusability</strong>: If a function is used in multiple places within the codebase or might be reused in the future, a regular function with a descriptive name is preferred over a lambda function.</p>
+</li>
+<li>
+<p><strong>Team Consistency</strong>: In team environments, the team's familiarity and comfort level with lambda functions should also be considered when making the decision.</p>
+</li>
+</ol>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Example of using lambda function with map for list processing</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">squared_numbers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">numbers</span><span class="p">))</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">squared_numbers</span><span class="p">)</span>  <span class="c1"># Output: [1, 4, 9, 16, 25]</span>
+</span></code></pre></div>
+<p>By considering these factors and understanding the specific use-cases where lambda functions excel, developers can leverage their power effectively in Python applications.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../control_flow_statements/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Control Flow Statements">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Control Flow Statements
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../exception_handling/" class="md-footer__link md-footer__link--next" aria-label="Next: Exception Handling">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Exception Handling
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://learning.teachme.codes" target="_blank" rel="noopener" title="learning.teachme.codes" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/teachmecodes" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/teachmecodes" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/c/teachmecodes" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+  
+    
+  
+
+
+
+  
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+        <script src="../mathjax-config.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
