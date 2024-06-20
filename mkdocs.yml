@@ -171,13 +171,15 @@ extra:
       make our documentation better.
   social:
     - icon: fontawesome/brands/github
-      link: https://learning.teachme.codes
+      link: https://teach-me-codes.github.io
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/teachmecodes
+      link: https://x.com/TeachMeCodes
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/teachmecodes
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/company/teachmecodes
+      link: https://www.linkedin.com/company/teach-me-codes
     - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/c/teachmecodes
+      link: https://www.youtube.com/@teach-me-codes
 
 
 
