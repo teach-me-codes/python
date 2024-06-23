@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#question" class="md-skip">
+        <a href="#variables-and-data-types" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="Learning Python" class="md-header__button md-logo" aria-label="Learning Python" data-md-component="logo">
       
@@ -235,94 +237,6 @@
       
         
           
-            
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
-        
-  
-    
-  
-  Home
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../python_syntax_and_semantics/" class="md-tabs__link">
-          
-  
-    
-  
-  Basic Python
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../generators_and_iterators/" class="md-tabs__link">
-          
-  
-    
-  
-  Intermediate Python
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../object_oriented_functions/" class="md-tabs__link">
-          
-  
-    
-  
-  Advanced Python
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ul>
-  </div>
-</nav>
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -336,10 +250,8 @@
                     
 
 
-  
 
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="Learning Python" class="md-nav__button md-logo" aria-label="Learning Python" data-md-component="logo">
       
@@ -387,67 +299,6 @@
       
   
   
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Basic Python
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            Basic Python
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
@@ -463,10 +314,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
     
@@ -481,6 +331,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Variables and Data Types
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -491,13 +352,211 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-the-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding the Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding the Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importance-of-variables-in-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importance of Variables in Programming
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#role-of-data-types-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Role of Data Types in Python
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview-of-python-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview of Python Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview of Python Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-and-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition and Purpose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-naming-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable Naming Conventions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fundamentals-of-variables-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fundamentals of Variables in Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fundamentals of Variables in Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are Variables?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What are Variables?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition of Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#role-of-variables-in-storing-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Role of Variables in Storing Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-naming-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable Naming Rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable Naming Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valid-variable-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Valid Variable Names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#naming-conventions-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming Conventions in Python
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-declarations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable Declarations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable Declarations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax-for-declaring-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax for Declaring Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicit-vs-implicit-declaration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicit vs. Implicit Declaration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -515,10 +574,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -536,10 +594,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -557,10 +614,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -578,10 +634,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -599,89 +654,9 @@
     </li>
   
 
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
     
       
       
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Intermediate Python
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            Intermediate Python
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
   
   
   
@@ -699,10 +674,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -720,10 +694,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -741,10 +714,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -762,10 +734,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -783,10 +754,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -804,10 +774,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -825,10 +794,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -846,10 +814,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -867,10 +834,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -888,10 +854,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -909,10 +874,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -930,10 +894,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -951,10 +914,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -972,10 +934,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -993,89 +954,9 @@
     </li>
   
 
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
     
       
       
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
-    Advanced Python
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Advanced Python
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
   
   
   
@@ -1093,10 +974,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -1114,10 +994,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -1135,10 +1014,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -1156,10 +1034,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -1177,10 +1054,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -1198,10 +1074,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -1219,10 +1094,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -1240,10 +1114,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -1261,10 +1134,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -1282,10 +1154,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -1303,10 +1174,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -1324,10 +1194,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -1345,10 +1214,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -1366,10 +1234,9 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
@@ -1384,14 +1251,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
     </li>
   
 
@@ -1415,6 +1274,194 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-the-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding the Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding the Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importance-of-variables-in-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importance of Variables in Programming
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#role-of-data-types-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Role of Data Types in Python
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview-of-python-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview of Python Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Overview of Python Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-and-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition and Purpose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-naming-conventions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable Naming Conventions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fundamentals-of-variables-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fundamentals of Variables in Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fundamentals of Variables in Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are Variables?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What are Variables?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition of Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#role-of-variables-in-storing-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Role of Variables in Storing Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-naming-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable Naming Rules
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable Naming Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valid-variable-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Valid Variable Names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#naming-conventions-in-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Naming Conventions in Python
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-declarations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variable Declarations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variable Declarations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax-for-declaring-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syntax for Declaring Variables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explicit-vs-implicit-declaration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Explicit vs. Implicit Declaration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1445,6 +1492,271 @@
   
 
 
+<h1 id="variables-and-data-types">Variables and Data Types</h1>
+<h2 id="understanding-the-basics">Understanding the Basics</h2>
+<p>In Python, variables are used to store data in memory, allowing programmers to work with and manipulate data efficiently. Data types in Python define the type of data that can be stored in a variable, which is crucial for effective Python coding.</p>
+<h3 id="importance-of-variables-in-programming">Importance of Variables in Programming</h3>
+<p>Variables are essential in programming as they enable storing and manipulating data during program execution. They serve as placeholders for information that can be accessed and modified throughout the program, leading to dynamic and adaptable code for various scenarios.</p>
+<h3 id="role-of-data-types-in-python">Role of Data Types in Python</h3>
+<p>Data types determine the nature of data stored in variables. Python is dynamically typed, automatically assigning data types based on values. Common data types in Python include:
+- <strong>Integers</strong>: Whole numbers without decimals.
+- <strong>Floats</strong>: Numbers with decimal points.
+- <strong>Strings</strong>: Sequences of characters in quotes.
+- <strong>Lists</strong>: Ordered item collections.
+- <strong>Tuples</strong>: Immutable ordered item collections.
+- <strong>Sets</strong>: Unordered unique item collections.
+- <strong>Dictionaries</strong>: Key-value pair collections.</p>
+<h2 id="overview-of-python-variables">Overview of Python Variables</h2>
+<h3 id="definition-and-purpose">Definition and Purpose</h3>
+<p>Variables are created in Python by assigning values using "=".
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Alice&quot;</span>
+</span></code></pre></div>
+Python's variables are dynamically typed, inferring types from values. This flexibility requires coherence in data types during operations.</p>
+<h3 id="variable-naming-conventions">Variable Naming Conventions</h3>
+<p>Adhering to naming conventions in Python is crucial for code clarity and readability:
+- Names include letters, digits, underscores, not starting with a digit.
+- Case-sensitive naming.
+- Encourage descriptive names following snake_case for readability.</p>
+<p>Following these conventions ensures clean, understandable, and maintainable code.</p>
+<p>Understanding variables and data types aids Python programmers in effectively working with data, enabling the development of robust, flexible programs.</p>
+<h2 id="fundamentals-of-variables-in-python">Fundamentals of Variables in Python</h2>
+<h3 id="what-are-variables">What are Variables?</h3>
+<p>Variables in Python are fundamental components used for storing data in memory. When a variable is created, a space is allocated in the computer's memory to store the data assigned to that variable. Python is dynamically typed, meaning that you don't have to explicitly declare the data type of a variable. Instead, the type is inferred at runtime based on the value assigned to it.</p>
+<h4 id="definition-of-variables">Definition of Variables</h4>
+<p>A variable is a named reference to a value that can change. It is like a container that holds a piece of information which can be accessed and manipulated during the program execution.</p>
+<h4 id="role-of-variables-in-storing-data">Role of Variables in Storing Data</h4>
+<p>Variables play a crucial role in programming by allowing developers to store data that can be manipulated and used throughout a program. They provide a way to manage and organize data effectively, making the code more readable and maintainable.</p>
+<h3 id="variable-naming-rules">Variable Naming Rules</h3>
+<p>When naming variables in Python, there are certain rules that need to be followed to ensure proper syntax and avoid errors.</p>
+<h4 id="valid-variable-names">Valid Variable Names</h4>
+<ol>
+<li>Variable names can contain letters (a-z, A-Z), digits (0-9), and underscores (_).</li>
+<li>They cannot start with a digit.</li>
+<li>Variable names are case-sensitive.</li>
+<li>Reserved keywords such as <code>if</code>, <code>for</code>, and <code>while</code> cannot be used as variable names.</li>
+</ol>
+<h4 id="naming-conventions-in-python">Naming Conventions in Python</h4>
+<ol>
+<li>Use descriptive names that convey the meaning of the variable's purpose.</li>
+<li>For multi-word variable names, adhere to the convention of using underscores to separate words (snake_case).</li>
+<li>Avoid using single characters or ambiguous names that may confuse the reader.</li>
+</ol>
+<h3 id="variable-declarations">Variable Declarations</h3>
+<p>Variables in Python can be declared using a simple assignment statement. There are explicit and implicit ways of declaring variables.</p>
+<h4 id="syntax-for-declaring-variables">Syntax for Declaring Variables</h4>
+<p>Variables can be declared and initialized in a single line using the assignment operator (=). For example:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello, World!&quot;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">number</span> <span class="o">=</span> <span class="mi">10</span>
+</span></code></pre></div></p>
+<h4 id="explicit-vs-implicit-declaration">Explicit vs. Implicit Declaration</h4>
+<ul>
+<li><strong>Explicit Declaration</strong>: This involves explicitly specifying the data type of the variable. For example, <code>name: str = "Alice"</code> declares a variable <code>name</code> of type <code>str</code>.</li>
+<li><strong>Implicit Declaration</strong>: In Python, variables are implicitly declared based on the assigned value without specifying the data type.</li>
+</ul>
+<p>Variables are essential for any programming language as they enable developers to work with and manipulate data efficiently. Understanding variable fundamentals and best practices is vital for writing clean and maintainable code in Python.</p>
+<h1 id="variables-and-data-types_1">Variables and Data Types</h1>
+<h2 id="python-data-types">Python Data Types</h2>
+<p>In Python, variables store data in memory, with data types defining the type of data stored. Python supports various data types such as integers, floats, strings, lists, tuples, sets, and dictionaries, essential for programming and data manipulation.</p>
+<h3 id="numeric-data-types">Numeric Data Types</h3>
+<h4 id="integers-in-python">Integers in Python</h4>
+<p>Integers in Python are whole numbers without decimals, supporting arithmetic operations (+, -, *, /) and exponentiation using <code>**</code>.</p>
+<p><strong>Example:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">num1</span> <span class="o">=</span> <span class="mi">10</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">num2</span> <span class="o">=</span> <span class="o">-</span><span class="mi">5</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">sum_nums</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">+</span> <span class="n">num2</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">sum_nums</span><span class="p">)</span>  <span class="c1"># Output: 5</span>
+</span></code></pre></div></p>
+<h4 id="floating-point-numbers">Floating-Point Numbers</h4>
+<p>Floating-point numbers represent real numbers with decimals or exponents. Precision and rounding errors should be considered in floating-point arithmetic.</p>
+<p><strong>Example:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">num_float1</span> <span class="o">=</span> <span class="mf">3.14</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">num_float2</span> <span class="o">=</span> <span class="mf">2.718</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">result</span> <span class="o">=</span> <span class="n">num_float1</span> <span class="o">*</span> <span class="n">num_float2</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>  <span class="c1"># Output: 8.53932</span>
+</span></code></pre></div></p>
+<h3 id="boolean-data-type">Boolean Data Type</h3>
+<h4 id="explanation-of-boolean-data-type">Explanation of Boolean Data Type</h4>
+<p>Boolean data represents <code>True</code> or <code>False</code>, crucial for control flow and decisions based on conditions.</p>
+<p><strong>Example:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">y</span> <span class="o">=</span> <span class="mi">10</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">is_greater</span> <span class="o">=</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">is_greater</span><span class="p">)</span>  <span class="c1"># Output: False</span>
+</span></code></pre></div></p>
+<h4 id="true-and-false-values">True and False Values</h4>
+<p>In Python, <code>True</code> and <code>False</code> are constants. Non-zero or non-empty objects are <code>True</code>, while zero or empty objects like <code>0</code>, <code>''</code>, <code>[]</code> are <code>False</code>.</p>
+<h3 id="text-data-type">Text Data Type</h3>
+<h4 id="introduction-to-strings">Introduction to Strings</h4>
+<p>Strings are character sequences in Python (enclosed in <code>''</code> or <code>""</code>). They are immutable and support various manipulations.</p>
+<p><strong>Example:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">str1</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">str2</span> <span class="o">=</span> <span class="s2">&quot;World&quot;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">concatenated_str</span> <span class="o">=</span> <span class="n">str1</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">str2</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">concatenated_str</span><span class="p">)</span>  <span class="c1"># Output: Hello World</span>
+</span></code></pre></div></p>
+<h4 id="string-operations-and-concatenation">String Operations and Concatenation</h4>
+<p>String concatenation uses <code>+</code>, supporting slicing, indexing, length determination, and formatting.</p>
+<h3 id="sequence-data-types">Sequence Data Types</h3>
+<h4 id="lists-in-python">Lists in Python</h4>
+<p>Lists are ordered, mutable collections in square brackets <code>[]</code>, supporting manipulation methods.</p>
+<h4 id="tuples-in-python">Tuples in Python</h4>
+<p>Tuples, in parentheses <code>()</code>, are ordered, immutable collections used for heterogeneous data.</p>
+<h3 id="set-data-type">Set Data Type</h3>
+<h4 id="definition-and-characteristics-of-sets">Definition and Characteristics of Sets</h4>
+<p>Sets, defined with curly braces <code>{}</code>, contain unique elements without duplicates, supporting set operations.</p>
+<h4 id="set-operations-and-methods">Set Operations and Methods</h4>
+<p>Sets offer methods for common operations like adding elements, removing elements, and set comparisons.</p>
+<h3 id="mapping-data-type">Mapping Data Type</h3>
+<h4 id="dictionaries-in-python">Dictionaries in Python</h4>
+<p>Dictionaries hold key-value pairs in <code>{}</code> and provide fast lookups for data mapping.</p>
+<h4 id="dictionary-operations-and-key-value-pairs">Dictionary Operations and Key-Value Pairs</h4>
+<p>Dictionaries support key-value pair operations, ideal for data storage and retrieval.</p>
+<p>Understanding Python data types and their features is crucial for efficient data storage and manipulation.</p>
+<h2 id="variables-and-data-types_2">Variables and Data Types</h2>
+<h3 id="assigning-values-to-variables">Assigning Values to Variables</h3>
+<p>In Python, variables serve as containers to store data in the memory. The assignment operator '=' is used to allocate values to these variables. Python exhibits dynamic typing where variables can hold various data types like integers, floats, strings, lists, tuples, sets, and dictionaries.</p>
+<ol>
+<li><strong>Using the Assignment Operator '='</strong></li>
+<li>
+<p>The assignment operator '=' assigns a value to a variable in Python.
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Alice&#39;</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>Multiple Assignments and Chained Assignments</strong></p>
+</li>
+<li>Python supports multiple assignments and chained assignments for convenience.</li>
+<li>Multiple assignments allow assigning multiple variables in a single line.
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span>
+</span></code></pre></div></li>
+<li>Chained assignments enable assigning the same value to multiple variables in a single line.
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">x</span> <span class="o">=</span> <span class="n">y</span> <span class="o">=</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">0</span>
+</span></code></pre></div></li>
+</ol>
+<h3 id="type-checking-and-type-conversion">Type Checking and Type Conversion</h3>
+<p>Python being dynamically typed facilitates type checking and type conversion where a variable's data type is not fixed.</p>
+<ol>
+<li><strong>Checking the Type of a Variable</strong></li>
+<li>
+<p>The <code>type()</code> function in Python determines the data type of a variable.
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>  <span class="c1"># Output: &lt;class &#39;int&#39;&gt;</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>Converting Between Data Types</strong></p>
+</li>
+<li>Python provides built-in functions for seamless conversion between different data types.
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">num</span> <span class="o">=</span> <span class="mi">10</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="n">num_str</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</span></code></pre></div></li>
+</ol>
+<h3 id="built-in-functions-and-methods">Built-in Functions and Methods</h3>
+<p>Python offers a set of built-in functions and methods that aid in efficient data manipulation.</p>
+<ol>
+<li><strong>String Methods and Functions</strong></li>
+<li>
+<p>Python's string methods like <code>upper()</code>, <code>lower()</code>, <code>replace()</code>, <code>split()</code>, and <code>join()</code> enable string manipulation.
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;Hello, World!&quot;</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_string</span><span class="o">.</span><span class="n">upper</span><span class="p">())</span>  <span class="c1"># Output: HELLO, WORLD!</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>List Manipulation Functions</strong></p>
+</li>
+<li>Lists in Python come with built-in functions such as <code>append()</code>, <code>pop()</code>, <code>extend()</code>, <code>sort()</code>, and <code>index()</code> for easy list manipulation.
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span></code></pre></div></li>
+</ol>
+<h3 id="indexing-and-slicing">Indexing and Slicing</h3>
+<p>Indexing and slicing are foundational concepts for accessing and extracting elements from data structures like strings, lists, tuples, and arrays efficiently.</p>
+<ol>
+<li><strong>Accessing Elements in Sequences</strong></li>
+<li>
+<p>Elements in a sequence can be accessed using their index, starting from 0 in Python.
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># Output: &#39;b&#39;</span>
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>Slice Notation for Subsetting Data</strong></p>
+</li>
+<li>Slicing allows extracting a portion of a sequence by specifying a start, stop, and step size.
+     <div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_string</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>  <span class="c1"># Output: &#39;yth&#39;</span>
+</span></code></pre></div></li>
+</ol>
+<p>Understanding variables and data types in Python is crucial for effective programming and data manipulation. The flexibility to assign values, validate and change data types, leverage built-in functions, and manipulate sequences proficiently enriches Python programming capabilities.</p>
+<h1 id="variables-and-data-types_3">Variables and Data Types</h1>
+<h2 id="advanced-concepts-in-variables-and-data-types">Advanced Concepts in Variables and Data Types</h2>
+<h3 id="list-comprehensions">List Comprehensions</h3>
+<p>List comprehensions offer a concise way to generate lists in Python through iteration, providing a more efficient and readable alternative to traditional looping methods. They can incorporate filtering conditions.</p>
+<h4 id="syntax-and-usage-in-python">Syntax and Usage in Python</h4>
+<p>The standard syntax for list comprehensions is:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">new_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">expression</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">iterable</span> <span class="k">if</span> <span class="n">condition</span><span class="p">]</span>
+</span></code></pre></div>
+- <strong>Expression</strong>: Operation executed on each item during iteration.
+- <strong>Item</strong>: Represents elements within the iterable.
+- <strong>Iterable</strong>: Collection being iterated over.
+- <strong>Condition</strong>: (Optional) Filters elements based on specified conditions.</p>
+<p>Example:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">squared_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="n">num</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">numbers</span> <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">squared_numbers</span><span class="p">)</span>  <span class="c1"># Output: [4, 16]</span>
+</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>
+</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="c1">#### Benefits of List Comprehensions</span>
+</span><span id="__span-16-6"><a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="mf">1.</span> <span class="o">**</span><span class="n">Readability</span><span class="o">**</span><span class="p">:</span> <span class="n">Enhances</span> <span class="n">code</span> <span class="n">clarity</span> <span class="ow">and</span> <span class="n">conciseness</span><span class="p">,</span> <span class="n">reducing</span> <span class="n">the</span> <span class="n">need</span> <span class="k">for</span> <span class="nb">complex</span> <span class="n">loops</span><span class="o">.</span>
+</span><span id="__span-16-7"><a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="mf">2.</span> <span class="o">**</span><span class="n">Efficiency</span><span class="o">**</span><span class="p">:</span> <span class="n">Optimized</span> <span class="k">for</span> <span class="n">performance</span><span class="p">,</span> <span class="n">offering</span> <span class="n">faster</span> <span class="n">execution</span> <span class="n">compared</span> <span class="n">to</span> <span class="n">traditional</span> <span class="n">looping</span><span class="o">.</span>
+</span><span id="__span-16-8"><a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="mf">3.</span> <span class="o">**</span><span class="n">One</span><span class="o">-</span><span class="n">Liner</span><span class="o">**</span><span class="p">:</span> <span class="n">Enables</span> <span class="nb">complex</span> <span class="n">operations</span> <span class="n">to</span> <span class="n">be</span> <span class="n">achieved</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">single</span> <span class="n">line</span><span class="p">,</span> <span class="n">promoting</span> <span class="n">code</span> <span class="n">elegance</span><span class="o">.</span>
+</span><span id="__span-16-9"><a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>
+</span><span id="__span-16-10"><a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="c1">### Named Tuples</span>
+</span><span id="__span-16-11"><a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="n">Named</span> <span class="n">tuples</span><span class="p">,</span> <span class="n">found</span> <span class="ow">in</span> <span class="n">Python</span><span class="s1">&#39;s collections module, act as immutable data structures with named fields, combining the characteristics of tuples (immutable) and dictionaries (named access).</span>
+</span><span id="__span-16-12"><a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>
+</span><span id="__span-16-13"><a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="c1">#### Creating Named Tuples</span>
+</span><span id="__span-16-14"><a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="n">To</span> <span class="n">create</span> <span class="n">a</span> <span class="n">named</span> <span class="nb">tuple</span><span class="p">,</span> <span class="kn">import</span> <span class="nn">the</span> <span class="n">module</span> <span class="ow">and</span> <span class="n">define</span> <span class="n">the</span> <span class="n">structure</span> <span class="n">using</span> <span class="n">the</span> <span class="err">`</span><span class="n">namedtuple</span><span class="err">`</span> <span class="n">function</span><span class="o">.</span>
+</span><span id="__span-16-15"><a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="err">```</span><span class="n">python</span>
+</span><span id="__span-16-16"><a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">namedtuple</span>
+</span><span id="__span-16-17"><a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a><span class="n">Point</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;Point&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">])</span>
+</span><span id="__span-16-18"><a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a><span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-16-19"><a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a><span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>  <span class="c1"># Output: Point(x=1, y=2)</span>
+</span><span id="__span-16-20"><a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a>
+</span><span id="__span-16-21"><a id="__codelineno-16-21" name="__codelineno-16-21" href="#__codelineno-16-21"></a><span class="c1">#### Accessing Elements by Name</span>
+</span><span id="__span-16-22"><a id="__codelineno-16-22" name="__codelineno-16-22" href="#__codelineno-16-22"></a><span class="n">Named</span> <span class="n">tuples</span> <span class="n">support</span> <span class="n">element</span> <span class="n">access</span> <span class="n">by</span> <span class="n">both</span> <span class="n">index</span> <span class="ow">and</span> <span class="n">name</span><span class="p">,</span> <span class="n">enhancing</span> <span class="n">code</span> <span class="n">clarity</span> <span class="ow">and</span> <span class="n">comprehension</span><span class="o">.</span>
+</span><span id="__span-16-23"><a id="__codelineno-16-23" name="__codelineno-16-23" href="#__codelineno-16-23"></a><span class="err">```</span><span class="n">python</span>
+</span><span id="__span-16-24"><a id="__codelineno-16-24" name="__codelineno-16-24" href="#__codelineno-16-24"></a><span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Access by index: 1</span>
+</span><span id="__span-16-25"><a id="__codelineno-16-25" name="__codelineno-16-25" href="#__codelineno-16-25"></a><span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>   <span class="c1"># Access by name: 1</span>
+</span><span id="__span-16-26"><a id="__codelineno-16-26" name="__codelineno-16-26" href="#__codelineno-16-26"></a>
+</span><span id="__span-16-27"><a id="__codelineno-16-27" name="__codelineno-16-27" href="#__codelineno-16-27"></a><span class="c1">### Dictionary Comprehensions</span>
+</span><span id="__span-16-28"><a id="__codelineno-16-28" name="__codelineno-16-28" href="#__codelineno-16-28"></a><span class="n">Similar</span> <span class="n">to</span> <span class="nb">list</span> <span class="n">comprehensions</span><span class="p">,</span> <span class="n">dictionary</span> <span class="n">comprehensions</span> <span class="n">allow</span> <span class="n">the</span> <span class="n">creation</span> <span class="n">of</span> <span class="n">dictionaries</span> <span class="n">efficiently</span> <span class="n">by</span> <span class="n">iterating</span> <span class="n">through</span> <span class="n">key</span><span class="o">-</span><span class="n">value</span> <span class="n">pairs</span><span class="o">.</span>
+</span><span id="__span-16-29"><a id="__codelineno-16-29" name="__codelineno-16-29" href="#__codelineno-16-29"></a>
+</span><span id="__span-16-30"><a id="__codelineno-16-30" name="__codelineno-16-30" href="#__codelineno-16-30"></a><span class="c1">#### Creating Dictionaries</span>
+</span><span id="__span-16-31"><a id="__codelineno-16-31" name="__codelineno-16-31" href="#__codelineno-16-31"></a><span class="n">The</span> <span class="n">syntax</span> <span class="k">for</span> <span class="n">dictionary</span> <span class="n">comprehensions</span> <span class="ow">is</span><span class="p">:</span>
+</span><span id="__span-16-32"><a id="__codelineno-16-32" name="__codelineno-16-32" href="#__codelineno-16-32"></a><span class="err">```</span><span class="n">python</span>
+</span><span id="__span-16-33"><a id="__codelineno-16-33" name="__codelineno-16-33" href="#__codelineno-16-33"></a><span class="n">new_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">key_expr</span><span class="p">:</span> <span class="n">value_expr</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">iterable</span> <span class="k">if</span> <span class="n">condition</span><span class="p">}</span>
+</span></code></pre></div>
+- <strong>Key_expr</strong>: Expression for dictionary keys.
+- <strong>Value_expr</strong>: Expression for corresponding values.
+- <strong>Iterable</strong>: Collection being iterated.
+- <strong>Condition</strong>: (Optional) Filters items based on conditions.</p>
+<h4 id="conditional-expressions-in-dictionary-comprehensions">Conditional Expressions in Dictionary Comprehensions</h4>
+<p>Dictionary comprehensions also support conditional expressions to include or exclude items based on specific criteria, providing flexibility in dictionary creation.</p>
+<h3 id="immutable-data-types">Immutable Data Types</h3>
+<p>Immutable data types refer to objects whose state cannot be altered once created in Python, essential for maintaining data integrity.</p>
+<h4 id="understanding-immutability">Understanding Immutability</h4>
+<p>Immutable objects, once instantiated, remain unchangeable. Examples in Python include integers, floats, strings, tuples, and named tuples.</p>
+<h4 id="examples-of-immutable-data-types">Examples of Immutable Data Types</h4>
+<ol>
+<li><strong>Integers</strong>: Whole numbers.</li>
+<li><strong>Strings</strong>: Sequences of characters.</li>
+<li><strong>Tuples</strong>: Ordered and unchangeable collections.</li>
+</ol>
+<p>In conclusion, mastering advanced concepts like list comprehensions, named tuples, dictionary comprehensions, and immutable data types enriches Python's capabilities, providing elegant solutions for variable handling. Each concept offers distinct advantages in readability, efficiency, and data management.</p>
+<hr />
+<h1 id="brushup-your-python">Brushup Your Python</h1>
+<hr />
 <h1 id="question">Question</h1>
 <p><strong>Main question</strong>: What is a variable in Python and how is it used to store data?</p>
 <p><strong>Explanation</strong>: The candidate should explain the concept of variables as containers for storing data in memory in Python. Variables can hold different data types such as integers, floats, strings, lists, tuples, sets, and dictionaries.</p>
@@ -1473,9 +1785,9 @@
 - Dictionaries: unordered collections of key-value pairs enclosed in curly braces (<span class="arithmatex">\(person = {'name': 'Alice', 'age': 30}\)</span>)</p>
 <p>Variables in Python can be reassigned to different data types as Python is dynamically typed. This flexibility allows variables to hold different types of data during the execution of a program.</p>
 <p>Variables in Python are initialized by assigning a value to them using the assignment operator '='. The value on the right side of the '=' is assigned to the variable on the left side. Here is an example of initializing variables in Python:</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># integer</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mf">3.14</span>  <span class="c1"># float</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Alice&#39;</span>  <span class="c1"># string</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># integer</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mf">3.14</span>  <span class="c1"># float</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Alice&#39;</span>  <span class="c1"># string</span>
 </span></code></pre></div>
 <p>The significance of variable naming conventions in writing Python code is to make the code more readable and understandable. It is recommended to use descriptive names for variables that convey the purpose of the data stored in them. Variable names should be meaningful and follow PEP 8 naming conventions, such as using lowercase letters with underscores for multi-word variable names.</p>
 <h2 id="follow-up-questions">Follow-up questions:</h2>
@@ -1517,8 +1829,8 @@
 <li>
 <p><strong>How can type conversion between different data types be performed in Python?</strong>
   Type conversion in Python can be done using built-in functions like <code>int()</code>, <code>float()</code>, <code>str()</code>, <code>list()</code>, <code>tuple()</code>, <code>set()</code>, and <code>dict()</code>. For example:
-  <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">y</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># Converts integer to float</span>
+  <div class="language-python highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="n">y</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># Converts integer to float</span>
 </span></code></pre></div></p>
 </li>
 <li>
@@ -1556,24 +1868,24 @@
 <h3 id="how-can-variables-be-used-to-work-with-strings-in-python-programming">How can variables be used to work with strings in Python programming?</h3>
 <p>In Python, variables are used to store data in memory, and strings are one of the data types that can be stored in variables. Strings in Python are sequences of characters enclosed within either single quotes (' ') or double quotes (" ").</p>
 <p><strong>Storing strings in variables:</strong>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Storing a string in a variable</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;Hello, World!&quot;</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># Storing a string in a variable</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="n">my_string</span> <span class="o">=</span> <span class="s2">&quot;Hello, World!&quot;</span>
 </span></code></pre></div></p>
 <p><strong>Manipulating strings using various string methods:</strong>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Getting the length of a string</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">my_string</span><span class="p">)</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Converting the string to uppercase</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">uppercase_str</span> <span class="o">=</span> <span class="n">my_string</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># Splitting the string based on a specific character</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">split_str</span> <span class="o">=</span> <span class="n">my_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c1"># Checking if a string starts with a specific prefix</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="n">starts_with_hello</span> <span class="o">=</span> <span class="n">my_string</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="c1"># Replacing a substring within a string</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="n">new_string</span> <span class="o">=</span> <span class="n">my_string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">,</span> <span class="s2">&quot;Python&quot;</span><span class="p">)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># Getting the length of a string</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="n">length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">my_string</span><span class="p">)</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="c1"># Converting the string to uppercase</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="n">uppercase_str</span> <span class="o">=</span> <span class="n">my_string</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="c1"># Splitting the string based on a specific character</span>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="n">split_str</span> <span class="o">=</span> <span class="n">my_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="c1"># Checking if a string starts with a specific prefix</span>
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="n">starts_with_hello</span> <span class="o">=</span> <span class="n">my_string</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>
+</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="c1"># Replacing a substring within a string</span>
+</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="n">new_string</span> <span class="o">=</span> <span class="n">my_string</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">,</span> <span class="s2">&quot;Python&quot;</span><span class="p">)</span>
 </span></code></pre></div></p>
 <p><strong>Flexibility and immutability of strings:</strong>
 - Strings in Python are immutable, meaning that once a string is created, it cannot be changed. Any operation that appears to modify a string actually creates a new string.
@@ -1589,9 +1901,9 @@
 </li>
 <li>
 <p>String concatenation in Python is done using the <code>+</code> operator. When you concatenate two strings, a new string is created with the combined content of the original strings.
-  <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">string1</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">string2</span> <span class="o">=</span> <span class="s2">&quot;World&quot;</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">concatenated_string</span> <span class="o">=</span> <span class="n">string1</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">string2</span>
+  <div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">string1</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="n">string2</span> <span class="o">=</span> <span class="s2">&quot;World&quot;</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="n">concatenated_string</span> <span class="o">=</span> <span class="n">string1</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">string2</span>
 </span></code></pre></div></p>
 </li>
 <li>
@@ -1742,9 +2054,9 @@
 <li>Both support indexing and slicing using square brackets.</li>
 <li>Indexing starts from 0 and negative indexing is also supported.</li>
 </ul>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Output: 1</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># Output: [2, 3]</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># Output: 1</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>  <span class="c1"># Output: [2, 3]</span>
 </span></code></pre></div>
 <ul>
 <li><strong>Sets</strong>:</li>
@@ -1757,8 +2069,8 @@
 <li>Dictionaries are accessed using keys rather than indices.</li>
 <li>Keys can be used to retrieve values associated with them.</li>
 </ul>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;key1&#39;</span><span class="p">:</span> <span class="s1">&#39;value1&#39;</span><span class="p">,</span> <span class="s1">&#39;key2&#39;</span><span class="p">:</span> <span class="s1">&#39;value2&#39;</span><span class="p">}</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;key1&#39;</span><span class="p">])</span>  <span class="c1"># Output: value1</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;key1&#39;</span><span class="p">:</span> <span class="s1">&#39;value1&#39;</span><span class="p">,</span> <span class="s1">&#39;key2&#39;</span><span class="p">:</span> <span class="s1">&#39;value2&#39;</span><span class="p">}</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;key1&#39;</span><span class="p">])</span>  <span class="c1"># Output: value1</span>
 </span></code></pre></div>
 <h3 id="real-world-scenarios-for-data-structure-usage">Real-World Scenarios for Data Structure Usage:</h3>
 <ul>
@@ -2011,7 +2323,7 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.action.view", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.sections", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
