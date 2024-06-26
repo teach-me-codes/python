@@ -9,11 +9,9 @@ repo_url: https://github.com/teach-me-codes/python
 extra_javascript:
   - static/mathjax-config.js
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js
-  - static/nav.js
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
-  - static/styles.css
 
 
 
@@ -61,7 +59,6 @@ markdown_extensions:
           case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
-  
   - codehilite:
       linenums: false
       guess_lang: false
@@ -143,10 +140,7 @@ theme:
     - minify:
         minify_html: true
   
-   
- 
-#extra_css:
-#  - extra.css
+
 
 
 extra:
