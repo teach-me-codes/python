@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation with Sinusoidal Paths</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .circular-nav {
+            position: relative;
+            width: 700px; /* Adjust width to accommodate paths */
+            height: 200px;
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+        }
+
+        .nav-button {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #0073e6;
+            border: 2px solid #0073e6;
+            font-size: 12px;
+            color: #ffffff;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative; /* Ensure buttons are above the paths */
+        }
+
+        .nav-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-button i {
+            margin-right: 8px;
+        }
+
+        .trajectory {
+            stroke: #ff5722;
+            stroke-width: 2;
+            fill: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="circular-nav">
+    <button class="nav-button" id="theory"><i class="fas fa-book"></i> Theory</button>
+    <button class="nav-button" id="projects"><i class="fas fa-laptop"></i> Projects</button>
+    <button class="nav-button" id="questions"><i class="fas fa-lightbulb"></i> Q&A</button>
+    <button class="nav-button" id="cheatsheets"><i class="fas fa-rocket"></i> Cheat Sheets</button>
+
+    <svg width="700" height="200" style="position: absolute; top: 0; left: 0; pointer-events: none;">
+        <path class="trajectory" d="M 150 100 Q 200 50, 250 100 T 350 100" />
+        <path class="trajectory" d="M 350 100 Q 400 150, 450 100 T 550 100" />
+        <path class="trajectory" d="M 550 100 Q 600 50, 650 100" />
+    </svg>
+</div>
+
+<script>
+    document.getElementById('theory').onclick = function() {
+        window.location.href = 'theory.html';
+    };
+    document.getElementById('projects').onclick = function() {
+        window.location.href = 'projects.html';
+    };
+    document.getElementById('questions').onclick = function() {
+        window.location.href = 'questions.html';
+    };
+    document.getElementById('cheatsheets').onclick = function() {
+        window.location.href = 'cheatsheets.html';
+    };
+</script>
+
+</body>
+</html>

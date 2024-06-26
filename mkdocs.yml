@@ -7,8 +7,14 @@ site_language: en
 repo_url: https://github.com/teach-me-codes/python
 
 extra_javascript:
-  - mathjax-config.js
+  - static/mathjax-config.js
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js
+  - static/nav.js
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
+  - static/styles.css
+
 
 
 
@@ -63,8 +69,7 @@ markdown_extensions:
       noclasses: true
       pygments_style: manni
 
-
-
+  
 
   
 theme:
@@ -79,7 +84,7 @@ theme:
   sticky_navigation: true
   collapse_navigation: true
   logo: assets/logo.png
-  favicon: assets/logo.png
+  favicon: assets/fevicon.ico
   features:
     - announce.dismiss
     - content.action.edit
@@ -99,7 +104,7 @@ theme:
     # - navigation.instant.progress
     # - navigation.prune
     - navigation.sections
-    #- navigation.tabs
+    - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
@@ -185,41 +190,162 @@ extra:
 
 nav:
 - Home: index.md
-- Python Syntax and Semantics: python_syntax_and_semantics.md
-- Variables and Data Types: variables_and_data_types.md
-- Control Flow Statements: control_flow_statements.md
-- Functions and Lambdas: functions_and_lambdas.md
-- Exception Handling: exception_handling.md
-- File IO Operations: file_io_operations.md
-- List Comprehensions: list_comprehensions.md
-- Generators and Iterators: generators_and_iterators.md
-- Decorators in Python: decorators_in_python.md
-- Context Managers: context_managers.md
-- Modules and Packages: modules_and_packages.md
-- Virtual Environments: virtual_environments.md
-- Python Standard Library: python_standard_library.md
-- Regular Expressions: regular_expressions.md
-- Using map_filter_reduce: using_map_filter_reduce.md
-- String Manipulation Functions: string_manipulation_functions.md
-- Numeric and Math Functions: numeric_and_math_functions.md
-- Data Structure Functions: data_structure_functions.md
-- Date and Time Functions: date_and_time_functions.md
-- Input and Output Functions: input_and_output_functions.md
-- Built-in Sorting and Searching: built_in_sorting_and_searching.md
-- Type Conversion Functions: type_conversion_functions.md
-- Object-Oriented Functions: object_oriented_functions.md
-- Classes and Objects: classes_and_objects.md
-- Inheritance and Polymorphism: inheritance_and_polymorphism.md
-- Encapsulation and Abstraction: encapsulation_and_abstraction.md
-- Magic Methods and Operator Overloading: magic_methods_and_operator_overloading.md
-- Composition and Aggregation: composition_and_aggregation.md
-- Class and Static Methods: class_and_static_methods.md
-- Properties and Descriptors: properties_and_descriptors.md
-- Abstract Base Classes: abstract_base_classes.md
-- Metaclasses in Python: metaclasses_in_python.md
-- Unit Testing in Python: unit_testing_in_python.md
-- Debugging Techniques: debugging_techniques.md
-- Profiling and Optimization: profiling_and_optimization.md
-- Concurrency and Parallelism: concurrency_and_parallelism.md
-- Asynchronous Programming: asynchronous_programming.md
+- Book Chapters:
+  - Book Chapters: chapters/chapters.md
+  - Python Syntax and Semantics: chapters/python_syntax_and_semantics.md
+  - Variables and Data Types: chapters/variables_and_data_types.md
+  - Control Flow Statements: chapters/control_flow_statements.md
+  - Functions and Lambdas: chapters/functions_and_lambdas.md
+  - Exception Handling: chapters/exception_handling.md
+  - File IO Operations: chapters/file_io_operations.md
+  - List Comprehensions: chapters/list_comprehensions.md
+  - Generators and Iterators: chapters/generators_and_iterators.md
+  - Decorators in Python: chapters/decorators_in_python.md
+  - Context Managers: chapters/context_managers.md
+  - Modules and Packages: chapters/modules_and_packages.md
+  - Virtual Environments: chapters/virtual_environments.md
+  - Python Standard Library: chapters/python_standard_library.md
+  - Regular Expressions: chapters/regular_expressions.md
+  - Using map_filter_reduce: chapters/using_map_filter_reduce.md
+  - String Manipulation Functions: chapters/string_manipulation_functions.md
+  - Numeric and Math Functions: chapters/numeric_and_math_functions.md
+  - Data Structure Functions: chapters/data_structure_functions.md
+  - Date and Time Functions: chapters/date_and_time_functions.md
+  - Input and Output Functions: chapters/input_and_output_functions.md
+  - Built-in Sorting and Searching: chapters/built_in_sorting_and_searching.md
+  - Type Conversion Functions: chapters/type_conversion_functions.md
+  - Object-Oriented Functions: chapters/object_oriented_functions.md
+  - Classes and Objects: chapters/classes_and_objects.md
+  - Inheritance and Polymorphism: chapters/inheritance_and_polymorphism.md
+  - Encapsulation and Abstraction: chapters/encapsulation_and_abstraction.md
+  - Magic Methods and Operator Overloading: chapters/magic_methods_and_operator_overloading.md
+  - Composition and Aggregation: chapters/composition_and_aggregation.md
+  - Class and Static Methods: chapters/class_and_static_methods.md
+  - Properties and Descriptors: chapters/properties_and_descriptors.md
+  - Abstract Base Classes: chapters/abstract_base_classes.md
+  - Metaclasses in Python: chapters/metaclasses_in_python.md
+  - Unit Testing in Python: chapters/unit_testing_in_python.md
+  - Debugging Techniques: chapters/debugging_techniques.md
+  - Profiling and Optimization: chapters/profiling_and_optimization.md
+  - Concurrency and Parallelism: chapters/concurrency_and_parallelism.md
+  - Asynchronous Programming: chapters/asynchronous_programming.md
+- Selected Projects:
+  - Projects: projects/projects.md
+  - Python Syntax and Semantics: projects/python_syntax_and_semantics.md
+  - Variables and Data Types: projects/variables_and_data_types.md
+  - Control Flow Statements: projects/control_flow_statements.md
+  - Functions and Lambdas: projects/functions_and_lambdas.md
+  - Exception Handling: projects/exception_handling.md
+  - File IO Operations: projects/file_io_operations.md
+  - List Comprehensions: projects/list_comprehensions.md
+  - Generators and Iterators: projects/generators_and_iterators.md
+  - Decorators in Python: projects/decorators_in_python.md
+  - Context Managers: projects/context_managers.md
+  - Modules and Packages: projects/modules_and_packages.md
+  - Virtual Environments: projects/virtual_environments.md
+  - Python Standard Library: projects/python_standard_library.md
+  - Regular Expressions: projects/regular_expressions.md
+  - Using map_filter_reduce: projects/using_map_filter_reduce.md
+  - String Manipulation Functions: projects/string_manipulation_functions.md
+  - Numeric and Math Functions: projects/numeric_and_math_functions.md
+  - Data Structure Functions: projects/data_structure_functions.md
+  - Date and Time Functions: projects/date_and_time_functions.md
+  - Input and Output Functions: projects/input_and_output_functions.md
+  - Built-in Sorting and Searching: projects/built_in_sorting_and_searching.md
+  - Type Conversion Functions: projects/type_conversion_functions.md
+  - Object-Oriented Functions: projects/object_oriented_functions.md
+  - Classes and Objects: projects/classes_and_objects.md
+  - Inheritance and Polymorphism: projects/inheritance_and_polymorphism.md
+  - Encapsulation and Abstraction: projects/encapsulation_and_abstraction.md
+  - Magic Methods and Operator Overloading: projects/magic_methods_and_operator_overloading.md
+  - Composition and Aggregation: projects/composition_and_aggregation.md
+  - Class and Static Methods: projects/class_and_static_methods.md
+  - Properties and Descriptors: projects/properties_and_descriptors.md
+  - Abstract Base Classes: projects/abstract_base_classes.md
+  - Metaclasses in Python: projects/metaclasses_in_python.md
+  - Unit Testing in Python: projects/unit_testing_in_python.md
+  - Debugging Techniques: projects/debugging_techniques.md
+  - Profiling and Optimization: projects/profiling_and_optimization.md
+  - Concurrency and Parallelism: projects/concurrency_and_parallelism.md
+  - Asynchronous Programming: projects/asynchronous_programming.md
+- Questions and Answers:
+  - Questions and Answers: qnas/qnas.md
+  - Python Syntax and Semantics: qnas/python_syntax_and_semantics.md
+  - Variables and Data Types: qnas/variables_and_data_types.md
+  - Control Flow Statements: qnas/control_flow_statements.md
+  - Functions and Lambdas: qnas/functions_and_lambdas.md
+  - Exception Handling: qnas/exception_handling.md
+  - File IO Operations: qnas/file_io_operations.md
+  - List Comprehensions: qnas/list_comprehensions.md
+  - Generators and Iterators: qnas/generators_and_iterators.md
+  - Decorators in Python: qnas/decorators_in_python.md
+  - Context Managers: qnas/context_managers.md
+  - Modules and Packages: qnas/modules_and_packages.md
+  - Virtual Environments: qnas/virtual_environments.md
+  - Python Standard Library: qnas/python_standard_library.md
+  - Regular Expressions: qnas/regular_expressions.md
+  - Using map_filter_reduce: qnas/using_map_filter_reduce.md
+  - String Manipulation Functions: qnas/string_manipulation_functions.md
+  - Numeric and Math Functions: qnas/numeric_and_math_functions.md
+  - Data Structure Functions: qnas/data_structure_functions.md
+  - Date and Time Functions: qnas/date_and_time_functions.md
+  - Input and Output Functions: qnas/input_and_output_functions.md
+  - Built-in Sorting and Searching: qnas/built_in_sorting_and_searching.md
+  - Type Conversion Functions: qnas/type_conversion_functions.md
+  - Object-Oriented Functions: qnas/object_oriented_functions.md
+  - Classes and Objects: qnas/classes_and_objects.md
+  - Inheritance and Polymorphism: qnas/inheritance_and_polymorphism.md
+  - Encapsulation and Abstraction: qnas/encapsulation_and_abstraction.md
+  - Magic Methods and Operator Overloading: qnas/magic_methods_and_operator_overloading.md
+  - Composition and Aggregation: qnas/composition_and_aggregation.md
+  - Class and Static Methods: qnas/class_and_static_methods.md
+  - Properties and Descriptors: qnas/properties_and_descriptors.md
+  - Abstract Base Classes: qnas/abstract_base_classes.md
+  - Metaclasses in Python: qnas/metaclasses_in_python.md
+  - Unit Testing in Python: qnas/unit_testing_in_python.md
+  - Debugging Techniques: qnas/debugging_techniques.md
+  - Profiling and Optimization: qnas/profiling_and_optimization.md
+  - Concurrency and Parallelism: qnas/concurrency_and_parallelism.md
+  - Asynchronous Programming: qnas/asynchronous_programming.md
+- Cheat Sheets:
+  - Cheat Sheets: cheats/cheats.md
+  - Python Syntax and Semantics: cheats/python_syntax_and_semantics.md
+  - Variables and Data Types: cheats/variables_and_data_types.md
+  - Control Flow Statements: cheats/control_flow_statements.md
+  - Functions and Lambdas: cheats/functions_and_lambdas.md
+  - Exception Handling: cheats/exception_handling.md
+  - File IO Operations: cheats/file_io_operations.md
+  - List Comprehensions: cheats/list_comprehensions.md
+  - Generators and Iterators: cheats/generators_and_iterators.md
+  - Decorators in Python: cheats/decorators_in_python.md
+  - Context Managers: cheats/context_managers.md
+  - Modules and Packages: cheats/modules_and_packages.md
+  - Virtual Environments: cheats/virtual_environments.md
+  - Python Standard Library: cheats/python_standard_library.md
+  - Regular Expressions: cheats/regular_expressions.md
+  - Using map_filter_reduce: cheats/using_map_filter_reduce.md
+  - String Manipulation Functions: cheats/string_manipulation_functions.md
+  - Numeric and Math Functions: cheats/numeric_and_math_functions.md
+  - Data Structure Functions: cheats/data_structure_functions.md
+  - Date and Time Functions: cheats/date_and_time_functions.md
+  - Input and Output Functions: cheats/input_and_output_functions.md
+  - Built-in Sorting and Searching: cheats/built_in_sorting_and_searching.md
+  - Type Conversion Functions: cheats/type_conversion_functions.md
+  - Object-Oriented Functions: cheats/object_oriented_functions.md
+  - Classes and Objects: cheats/classes_and_objects.md
+  - Inheritance and Polymorphism: cheats/inheritance_and_polymorphism.md
+  - Encapsulation and Abstraction: cheats/encapsulation_and_abstraction.md
+  - Magic Methods and Operator Overloading: cheats/magic_methods_and_operator_overloading.md
+  - Composition and Aggregation: cheats/composition_and_aggregation.md
+  - Class and Static Methods: cheats/class_and_static_methods.md
+  - Properties and Descriptors: cheats/properties_and_descriptors.md
+  - Abstract Base Classes: cheats/abstract_base_classes.md
+  - Metaclasses in Python: cheats/metaclasses_in_python.md
+  - Unit Testing in Python: cheats/unit_testing_in_python.md
+  - Debugging Techniques: cheats/debugging_techniques.md
+  - Profiling and Optimization: cheats/profiling_and_optimization.md
+  - Concurrency and Parallelism: cheats/concurrency_and_parallelism.md
+  - Asynchronous Programming: cheats/asynchronous_programming.md
+- References:
+  - References: references/references.md
   

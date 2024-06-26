@@ -1,152 +1,101 @@
-### [Introduction to Python](https://learning.teachme.codes/python/introduction_to_python): 
 
- Python is a high-level, interpreted programming language known for its simplicity and readability. It is widely used in web development, data analysis, artificial intelligence, and scientific computing.
-
-### [Python Syntax and Semantics](https://learning.teachme.codes/python/python_syntax_and_semantics): 
-
- Python syntax refers to the rules that define the structure of the language, while semantics define the meaning of the language constructs. Understanding both is essential for writing correct and efficient code.
-
-### [Variables and Data Types](https://learning.teachme.codes/python/variables_and_data_types): 
-
- Variables are used to store data in memory, while data types define the type of data that can be stored in a variable. Python supports various data types such as integers, floats, strings, lists, tuples, sets, and dictionaries.
-
-### [Control Flow Statements](https://learning.teachme.codes/python/control_flow_statements): 
-
- Control flow statements allow you to control the execution of code based on conditions. 'if' and 'else' statements are used for conditional execution, while 'for' and 'while' loops are used for iteration.
-
-### [Functions and Lambdas](https://learning.teachme.codes/python/functions_and_lambdas): 
-
- Functions are blocks of reusable code that perform a specific task. Lambdas are anonymous functions that can be defined in a single line. Both are essential for organizing and modularizing code.
-
-### [Exception Handling](https://learning.teachme.codes/python/exception_handling): 
-
- Exception handling allows you to gracefully handle errors and exceptions that occur during program execution. It helps prevent crashes and provides a way to recover from unexpected situations.
-
-### [File IO Operations](https://learning.teachme.codes/python/file_io_operations): 
-
- File IO operations allow you to read from and write to files on disk. Python provides built-in functions and methods for working with files, making it easy to manipulate file data.
-
-### [List Comprehensions](https://learning.teachme.codes/python/list_comprehensions): 
-
- List comprehensions provide a concise way to create lists in Python. They allow you to generate lists using a single line of code, making code more readable and efficient.
-
-### [Generators and Iterators](https://learning.teachme.codes/python/generators_and_iterators): 
-
- Generators and iterators are used to create iterable objects in Python. They allow you to iterate over sequences of data without loading the entire sequence into memory, making them memory-efficient.
-
-### [Decorators in Python](https://learning.teachme.codes/python/decorators_in_python): 
-
- Decorators are a powerful feature in Python that allow you to modify or extend the behavior of functions or methods.
-
-### [Context Managers](https://learning.teachme.codes/python/context_managers): 
-
- Context managers are used to manage resources in Python, such as files or database connections. They ensure that resources are properly cleaned up after use, even if an error occurs.
-
-### [Modules and Packages](https://learning.teachme.codes/python/modules_and_packages): 
-
- Modules are files that contain Python code, while packages are directories that contain multiple modules. They help organize and reuse code, making it easier to manage large projects.
-
-### [Virtual Environments](https://learning.teachme.codes/python/virtual_environments): 
-
- Virtual environments are isolated Python environments that allow you to install and manage dependencies for different projects. They help avoid conflicts between project dependencies and ensure reproducibility.
-
-### [Python Standard Library](https://learning.teachme.codes/python/python_standard_library): 
-
- The Python Standard Library is a collection of modules and packages that provide a wide range of functionality, such as file I/O, networking, and data processing. It is included with Python and does not require additional installation.
-
-### [Regular Expressions](https://learning.teachme.codes/python/regular_expressions): 
-
- Regular expressions are used to search and manipulate text patterns in Python. They provide a powerful and flexible way to match and extract data from strings.
-
-### [Using map_filter_reduce](https://learning.teachme.codes/python/using_map_filter_reduce): 
-
- The map(), filter(), and reduce() functions are built-in functions in Python that allow you to apply a function to each element of an iterable, filter elements based on a condition, and reduce a sequence of elements to a single value, respectively.
-
-### [String Manipulation Functions](https://learning.teachme.codes/python/string_manipulation_functions): 
-
- String manipulation functions in Python allow you to manipulate and format strings, such as concatenating, splitting, and replacing substrings. They are essential for working with text data.
-
-### [Numeric and Math Functions](https://learning.teachme.codes/python/numeric_and_math_functions): 
-
- Numeric and math functions in Python provide a wide range of mathematical operations, such as arithmetic, trigonometric, and statistical functions. They are essential for scientific computing and data analysis.
-
-### [Data Structure Functions](https://learning.teachme.codes/python/data_structure_functions): 
-
- Data structure functions in Python provide methods to manipulate lists, tuples, sets, and dictionaries. They allow you to add, remove, and modify elements in data structures efficiently.
-
-### [Date and Time Functions](https://learning.teachme.codes/python/date_and_time_functions): 
-
- Date and time functions in Python provide methods to work with dates, times, and time zones. They allow you to parse, format, and manipulate date and time values.
-
-### [Input and Output Functions](https://learning.teachme.codes/python/input_and_output_functions): 
-
- Input and output functions in Python allow you to interact with the user through the console, read input from files, and write output to files. They are essential for building interactive applications.
-
-### [Built-in Sorting and Searching](https://learning.teachme.codes/python/built_in_sorting_and_searching): 
-
- Python provides built-in functions and methods for sorting and searching elements in lists, tuples, sets, and dictionaries. They allow you to efficiently organize and search data.
-
-### [Type Conversion Functions](https://learning.teachme.codes/python/type_conversion_functions): 
-
- Type conversion functions in Python allow you to convert data between different data types, such as integers, floats, strings, and lists. They are essential for data processing and manipulation.
-
-### [Object-Oriented Functions](https://learning.teachme.codes/python/object_oriented_functions): 
-
- Object-oriented programming is a programming paradigm that uses objects and classes to model real-world entities. Python supports object-oriented programming, making it easy to create and work with objects.
-
-### [Classes and Objects](https://learning.teachme.codes/python/classes_and_objects): 
-
- Classes are blueprints for creating objects, while objects are instances of classes. They allow you to model real-world entities and define their behavior and attributes.
-
-### [Inheritance and Polymorphism](https://learning.teachme.codes/python/inheritance_and_polymorphism): 
-
- Inheritance allows you to create new classes based on existing classes, while polymorphism allows objects of different classes to be treated as objects of a common superclass. They help promote code reuse and flexibility.
-
-### [Encapsulation and Abstraction](https://learning.teachme.codes/python/encapsulation_and_abstraction): 
-
- Encapsulation is the process of hiding the internal implementation details of a class, while abstraction is the process of hiding unnecessary details and exposing only the essential features. They help improve code maintainability and readability.
-
-### [Magic Methods and Operator Overloading](https://learning.teachme.codes/python/magic_methods_and_operator_overloading): 
-
- Magic methods are special methods in Python that allow you to define custom behavior for built-in operations, such as addition, subtraction, and comparison. They provide a way to customize the behavior of objects.
-
-### [Composition and Aggregation](https://learning.teachme.codes/python/composition_and_aggregation): 
-
- Composition is a design pattern in which a class contains objects of other classes, while aggregation is a design pattern in which a class has a reference to another class. They help promote code reuse and modularity.
-
-### [Class and Static Methods](https://learning.teachme.codes/python/class_and_static_methods): 
-
- Class and static methods are methods that belong to a class rather than an instance of a class. They allow you to define behavior that is shared across all instances of a class or does not depend on instance state.
-
-### [Properties and Descriptors](https://learning.teachme.codes/python/properties_and_descriptors): 
-
- Properties and descriptors are used to define custom behavior for accessing and setting attributes of a class. They allow you to enforce constraints and validation rules on attribute values.
-
-### [Abstract Base Classes](https://learning.teachme.codes/python/abstract_base_classes): 
-
- Abstract base classes are classes that define a set of methods that must be implemented by subclasses. They provide a way to define interfaces and enforce method implementations in derived classes.
-
-### [Metaclasses in Python](https://learning.teachme.codes/python/metaclasses_in_python): 
-
- Metaclasses are classes that define the behavior of classes. They allow you to customize class creation and modify class attributes and methods. Metaclasses are a powerful feature in Python for advanced use cases.
-
-### [Unit Testing in Python](https://learning.teachme.codes/python/unit_testing_in_python): 
-
- Unit testing is a software testing technique in which individual units or components of a software application are tested in isolation. Python provides built-in libraries and frameworks for writing and running unit tests.
-
-### [Debugging Techniques](https://learning.teachme.codes/python/debugging_techniques): 
-
- Debugging is the process of identifying and fixing errors in a program. Python provides built-in tools and techniques for debugging, such as print statements, logging, and debugging tools.
-
-### [Profiling and Optimization](https://learning.teachme.codes/python/profiling_and_optimization): 
-
- Profiling is the process of measuring the performance of a program to identify bottlenecks and optimize code. Python provides built-in tools and libraries for profiling and optimizing code.
-
-### [Concurrency and Parallelism](https://learning.teachme.codes/python/concurrency_and_parallelism): 
-
- Concurrency is the ability of a program to execute multiple tasks simultaneously, while parallelism is the ability of a program to execute multiple tasks in parallel. Python provides built-in libraries and frameworks for writing concurrent and parallel code.
-
-### [Asynchronous Programming](https://learning.teachme.codes/python/asynchronous_programming): 
-
- Asynchronous programming is a programming paradigm that allows tasks to run concurrently without blocking the main program. Python provides built-in libraries and frameworks for writing asynchronous code.
+# Welcome to Python Learning Portal
+
+<style>
+.circular-nav {
+    position: relative;
+    width: 600px; /* Increase width to accommodate the fourth button */
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 25px; /* Rounded corners */
+}
+
+.nav-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #0073e6;
+    border: 2px solid #0073e6;
+    font-size: 12px;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.nav-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-button i {
+    margin-right: 8px; /* Space between icon and text */
+}
+</style>
+
+<div class="circular-nav">
+    <button class="nav-button" id="book"><i class="fas fa-book"></i> Book </button>
+    <button class="nav-button" id="questions"><i class="fas fa-lightbulb"></i> Q&A</button>
+    <button class="nav-button" id="cheatsheets"><i class="fas fa-text"></i> Cheat Sheets</button>
+    <button class="nav-button" id="projects"><i class="fas fa-laptop"></i> Projects</button>
+    <button class="nav-button" id="references"><i class="fas fa-text"></i> References </button>
+</div>
+
+<script>
+document.getElementById('book').onclick = function() {
+    window.location.href = 'https://learning.teachme.codes/python/chapters/chapters';
+};
+document.getElementById('projects').onclick = function() {
+    window.location.href = 'https://learning.teachme.codes/python/projects/projects';
+};
+document.getElementById('questions').onclick = function() {
+    window.location.href = 'https://learning.teachme.codes/python/qnas/qnas';
+};
+document.getElementById('cheatsheets').onclick = function() {
+    window.location.href = 'https://learning.teachme.codes/python/cheats/cheats';
+};
+document.getElementById('references').onclick = function() {
+    window.location.href = 'https://learning.teachme.codes/python/references/references';
+};
+</script>
+
+
+
+| Book Chapters | Questions & Answers | Cheat Sheets | Projects | References |
+|--------|----------|-----|--------------|------------|
+|[Introduction to Python](https://learning.teachme.codes/python/chapters/introduction_to_python)|[Introduction to QnAs](https://learning.teachme.codes/python/qnas/introduction_to_python)|[Introduction to Cheats](https://learning.teachme.codes/python/cheats/introduction_to_python)|[Introduction to Projects](https://learning.teachme.codes/python/projects/introduction_to_projects)|[Python Official Documentation](https://docs.python.org/3/tutorial/index.html)|
+|[Python Syntax and Semantics](https://learning.teachme.codes/python/chapters/python_syntax_and_semantics)|[Python Syntax and QnAs](https://learning.teachme.codes/python/qnas/python_syntax_and_semantics)|[Python Syntax and Cheats](https://learning.teachme.codes/python/cheats/python_syntax_and_semantics)|[Python Syntax and Projects](https://learning.teachme.codes/python/projects/python_syntax_and_semantics)|[Python Syntax](https://docs.python.org/3/reference/lexical_analysis.html)|
+|[Variables and Data Types](https://learning.teachme.codes/python/chapters/variables_and_data_types)|[Variables and QnAs](https://learning.teachme.codes/python/qnas/variables_and_data_types)|[Variables and Cheats](https://learning.teachme.codes/python/cheats/variables_and_data_types)|[Variables and Projects](https://learning.teachme.codes/python/projects/variables_and_data_types)|[Python Data Types](https://docs.python.org/3/library/stdtypes.html)|
+|[Control Flow Statements](https://learning.teachme.codes/python/chapters/control_flow_statements)|[Control Flow QnAs](https://learning.teachme.codes/python/qnas/control_flow_statements)|[Control Flow Cheats](https://learning.teachme.codes/python/cheats/control_flow_statements)|[Control Flow Projects](https://learning.teachme.codes/python/projects/control_flow_statements)|[Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html)|
+|[Functions and Lambdas](https://learning.teachme.codes/python/chapters/functions_and_lambdas)|[Functions and QnAs](https://learning.teachme.codes/python/qnas/functions_and_lambdas)|[Functions and Cheats](https://learning.teachme.codes/python/cheats/functions_and_lambdas)|[Functions and Projects](https://learning.teachme.codes/python/projects/functions_and_lambdas)|[Python Functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)|
+|[Exception Handling](https://learning.teachme.codes/python/chapters/exception_handling)|[Exception QnAs](https://learning.teachme.codes/python/qnas/exception_handling)|[Exception Cheats](https://learning.teachme.codes/python/cheats/exception_handling)|[Exception Projects](https://learning.teachme.codes/python/projects/exception_handling)|[Python Exceptions](https://docs.python.org/3/tutorial/errors.html)|
+|[File IO Operations](https://learning.teachme.codes/python/chapters/file_io_operations)|[File IO QnAs](https://learning.teachme.codes/python/qnas/file_io_operations)|[File IO Cheats](https://learning.teachme.codes/python/cheats/file_io_operations)|[File IO Projects](https://learning.teachme.codes/python/projects/file_io_operations)|[File IO](https://docs.python.org/3/tutorial/inputoutput.html)|
+|[List Comprehensions](https://learning.teachme.codes/python/chapters/list_comprehensions)|[List QnAs](https://learning.teachme.codes/python/qnas/list_comprehensions)|[List Cheats](https://learning.teachme.codes/python/cheats/list_comprehensions)|[List Projects](https://learning.teachme.codes/python/projects/list_comprehensions)|[List Comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)|
+|[Generators and Iterators](https://learning.teachme.codes/python/chapters/generators_and_iterators)|[Generators and QnAs](https://learning.teachme.codes/python/qnas/generators_and_iterators)|[Generators and Cheats](https://learning.teachme.codes/python/cheats/generators_and_iterators)|[Generators and Projects](https://learning.teachme.codes/python/projects/generators_and_iterators)|[Generators](https://docs.python.org/3/tutorial/classes.html#generators)|
+|[Decorators in Python](https://learning.teachme.codes/python/chapters/decorators_in_python)|[Decorators in QnAs](https://learning.teachme.codes/python/qnas/decorators_in_python)|[Decorators in Cheats](https://learning.teachme.codes/python/cheats/decorators_in_python)|[Decorators in Projects](https://learning.teachme.codes/python/projects/decorators_in_python)|[Decorators](https://docs.python.org/3/glossary.html#term-decorator)|
+|[Context Managers](https://learning.teachme.codes/python/chapters/context_managers)|[Context QnAs](https://learning.teachme.codes/python/qnas/context_managers)|[Context Cheats](https://learning.teachme.codes/python/cheats/context_managers)|[Context Projects](https://learning.teachme.codes/python/projects/context_managers)|[Context Managers](https://docs.python.org/3/reference/datamodel.html#context-managers)|
+|[Modules and Packages](https://learning.teachme.codes/python/chapters/modules_and_packages)|[Modules and QnAs](https://learning.teachme.codes/python/qnas/modules_and_packages)|[Modules and Cheats](https://learning.teachme.codes/python/cheats/modules_and_packages)|[Modules and Projects](https://learning.teachme.codes/python/projects/modules_and_packages)|[Modules](https://docs.python.org/3/tutorial/modules.html)|
+|[Virtual Environments](https://learning.teachme.codes/python/chapters/virtual_environments)|[Virtual QnAs](https://learning.teachme.codes/python/qnas/virtual_environments)|[Virtual Cheats](https://learning.teachme.codes/python/cheats/virtual_environments)|[Virtual Projects](https://learning.teachme.codes/python/projects/virtual_environments)|[Virtual Environments](https://docs.python.org/3/library/venv.html)|
+|[Python Standard Library](https://learning.teachme.codes/python/chapters/python_standard_library)|[Python Standard QnAs](https://learning.teachme.codes/python/qnas/python_standard_library)|[Python Standard Cheats](https://learning.teachme.codes/python/cheats/python_standard_library)|[Python Standard Projects](https://learning.teachme.codes/python/projects/python_standard_library)|[Standard Library](https://docs.python.org/3/library/index.html)|
+|[Regular Expressions](https://learning.teachme.codes/python/chapters/regular_expressions)|[Regular QnAs](https://learning.teachme.codes/python/qnas/regular_expressions)|[Regular Cheats](https://learning.teachme.codes/python/cheats/regular_expressions)|[Regular Projects](https://learning.teachme.codes/python/projects/regular_expressions)|[Regular Expressions](https://docs.python.org/3/library/re.html)|
+|[Using map_filter_reduce](https://learning.teachme.codes/python/chapters/using_map_filter_reduce)|[Using QnAs](https://learning.teachme.codes/python/qnas/using_map_filter_reduce)|[Using Cheats](https://learning.teachme.codes/python/cheats/using_map_filter_reduce)|[Using Projects](https://learning.teachme.codes/python/projects/using_map_filter_reduce)|[Functional Programming](https://docs.python.org/3/howto/functional.html)|
+|[String Manipulation Functions](https://learning.teachme.codes/python/chapters/string_manipulation_functions)|[String Manipulation QnAs](https://learning.teachme.codes/python/qnas/string_manipulation_functions)|[String Manipulation Cheats](https://learning.teachme.codes/python/cheats/string_manipulation_functions)|[String Manipulation Projects](https://learning.teachme.codes/python/projects/string_manipulation_functions)|[String Methods](https://docs.python.org/3/library/stdtypes.html#string-methods)|
+|[Numeric and Math Functions](https://learning.teachme.codes/python/chapters/numeric_and_math_functions)|[Numeric and Math QnAs](https://learning.teachme.codes/python/qnas/numeric_and_math_functions)|[Numeric and Math Cheats](https://learning.teachme.codes/python/cheats/numeric_and_math_functions)|[Numeric and Math Projects](https://learning.teachme.codes/python/projects/numeric_and_math_functions)|[Math Module](https://docs.python.org/3/library/math.html)|
+|[Data Structure Functions](https://learning.teachme.codes/python/chapters/data_structure_functions)|[Data Structure QnAs](https://learning.teachme.codes/python/qnas/data_structure_functions)|[Data Structure Cheats](https://learning.teachme.codes/python/cheats/data_structure_functions)|[Data Structure Projects](https://learning.teachme.codes/python/projects/data_structure_functions)|[Data Structures](https://docs.python.org/3/tutorial/datastructures.html)|
+|[Date and Time Functions](https://learning.teachme.codes/python/chapters/date_and_time_functions)|[Date and Time QnAs](https://learning.teachme.codes/python/qnas/date_and_time_functions)|[Date and Time Cheats](https://learning.teachme.codes/python/cheats/date_and_time_functions)|[Date and Time Projects](https://learning.teachme.codes/python/projects/date_and_time_functions)|[Datetime Module](https://docs.python.org/3/library/datetime.html)|
+|[Input and Output Functions](https://learning.teachme.codes/python/chapters/input_and_output_functions)|[Input and Output QnAs](https://learning.teachme.codes/python/qnas/input_and_output_functions)|[Input and Output Cheats](https://learning.teachme.codes/python/cheats/input_and_output_functions)|[Input and Output Projects](https://learning.teachme.codes/python/projects/input_and_output_functions)|[Input and Output](https://docs.python.org/3/tutorial/inputoutput.html)|
+|[Built-in Sorting and Searching](https://learning.teachme.codes/python/chapters/built_in_sorting_and_searching)|[Built-in Sorting and QnAs](https://learning.teachme.codes/python/qnas/built_in_sorting_and_searching)|[Built-in Sorting and Cheats](https://learning.teachme.codes/python/cheats/built_in_sorting_and_searching)|[Built-in Sorting and Projects](https://learning.teachme.codes/python/projects/built_in_sorting_and_searching)|[Sorting HOW TO](https://docs.python.org/3/howto/sorting.html)|
+|[Type Conversion Functions](https://learning.teachme.codes/python/chapters/type_conversion_functions)|[Type Conversion QnAs](https://learning.teachme.codes/python/qnas/type_conversion_functions)|[Type Conversion Cheats](https://learning.teachme.codes/python/cheats/type_conversion_functions)|[Type Conversion Projects](https://learning.teachme.codes/python/projects/type_conversion_functions)|[Type Conversion](https://docs.python.org/3/library/functions.html#type-conversion)|
+|[Object-Oriented Functions](https://learning.teachme.codes/python/chapters/object_oriented_functions)|[Object-Oriented QnAs](https://learning.teachme.codes/python/qnas/object_oriented_functions)|[Object-Oriented Cheats](https://learning.teachme.codes/python/cheats/object_oriented_functions)|[Object-Oriented Projects](https://learning.teachme.codes/python/projects/object_oriented_functions)|[Object-Oriented Programming](https://docs.python.org/3/tutorial/classes.html)|
+|[Classes and Objects](https://learning.teachme.codes/python/chapters/classes_and_objects)|[Classes and QnAs](https://learning.teachme.codes/python/qnas/classes_and_objects)|[Classes and Cheats](https://learning.teachme.codes/python/cheats/classes_and_objects)|[Classes and Projects](https://learning.teachme.codes/python/projects/classes_and_objects)|[Classes](https://docs.python.org/3/tutorial/classes.html)|
+|[Inheritance and Polymorphism](https://learning.teachme.codes/python/chapters/inheritance_and_polymorphism)|[Inheritance and QnAs](https://learning.teachme.codes/python/qnas/inheritance_and_polymorphism)|[Inheritance and Cheats](https://learning.teachme.codes/python/cheats/inheritance_and_polymorphism)|[Inheritance and Projects](https://learning.teachme.codes/python/projects/inheritance_and_polymorphism)|[Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)|
+|[Encapsulation and Abstraction](https://learning.teachme.codes/python/chapters/encapsulation_and_abstraction)|[Encapsulation and QnAs](https://learning.teachme.codes/python/qnas/encapsulation_and_abstraction)|[Encapsulation and Cheats](https://learning.teachme.codes/python/cheats/encapsulation_and_abstraction)|[Encapsulation and Projects](https://learning.teachme.codes/python/projects/encapsulation_and_abstraction)|[Encapsulation](https://docs.python.org/3/tutorial/classes.html#private-variables)|
+|[Magic Methods and Operator Overloading](https://learning.teachme.codes/python/chapters/magic_methods_and_operator_overloading)|[Magic Methods and QnAs](https://learning.teachme.codes/python/qnas/magic_methods_and_operator_overloading)|[Magic Methods and Cheats](https://learning.teachme.codes/python/cheats/magic_methods_and_operator_overloading)|[Magic Methods and Projects](https://learning.teachme.codes/python/projects/magic_methods_and_operator_overloading)|[Magic Methods](https://docs.python.org/3/reference/datamodel.html#special-method-names)|
+|[Composition and Aggregation](https://learning.teachme.codes/python/chapters/composition_and_aggregation)|[Composition and QnAs](https://learning.teachme.codes/python/qnas/composition_and_aggregation)|[Composition and Cheats](https://learning.teachme.codes/python/cheats/composition_and_aggregation)|[Composition and Projects](https://learning.teachme.codes/python/projects/composition_and_aggregation)|[Composition and Aggregation](https://docs.python.org/3/tutorial/classes.html#tut-composition)|
 
