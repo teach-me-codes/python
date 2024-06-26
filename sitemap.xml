@@ -2,197 +2,792 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://learning.teachme.codes/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/abstract_base_classes/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/abstract_base_classes/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/asynchronous_programming/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/asynchronous_programming/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/built_in_sorting_and_searching/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/built_in_sorting_and_searching/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/class_and_static_methods/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/chapters/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/classes_and_objects/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/class_and_static_methods/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/composition_and_aggregation/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/classes_and_objects/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/concurrency_and_parallelism/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/composition_and_aggregation/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/context_managers/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/concurrency_and_parallelism/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/control_flow_statements/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/context_managers/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/data_structure_functions/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/control_flow_statements/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/date_and_time_functions/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/data_structure_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/debugging_techniques/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/date_and_time_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/decorators_in_python/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/debugging_techniques/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/encapsulation_and_abstraction/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/decorators_in_python/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/exception_handling/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/encapsulation_and_abstraction/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/file_io_operations/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/exception_handling/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/functions_and_lambdas/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/file_io_operations/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/generators_and_iterators/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/functions_and_lambdas/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/inheritance_and_polymorphism/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/generators_and_iterators/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/input_and_output_functions/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/inheritance_and_polymorphism/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/introduction_to_python/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/input_and_output_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/list_comprehensions/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/introduction_to_python/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/magic_methods_and_operator_overloading/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/list_comprehensions/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/metaclasses_in_python/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/magic_methods_and_operator_overloading/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/modules_and_packages/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/metaclasses_in_python/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/numeric_and_math_functions/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/modules_and_packages/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/object_oriented_functions/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/numeric_and_math_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/profiling_and_optimization/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/object_oriented_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/properties_and_descriptors/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/profiling_and_optimization/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/python_standard_library/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/properties_and_descriptors/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/python_syntax_and_semantics/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/python_standard_library/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/regular_expressions/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/python_syntax_and_semantics/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/string_manipulation_functions/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/regular_expressions/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/type_conversion_functions/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/string_manipulation_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/unit_testing_in_python/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/type_conversion_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/using_map_filter_reduce/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/unit_testing_in_python/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/variables_and_data_types/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/using_map_filter_reduce/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://learning.teachme.codes/virtual_environments/</loc>
-         <lastmod>2024-06-23</lastmod>
+         <loc>https://learning.teachme.codes/chapters/variables_and_data_types/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/chapters/virtual_environments/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/abstract_base_classes/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/asynchronous_programming/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/built_in_sorting_and_searching/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/cheats/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/class_and_static_methods/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/classes_and_objects/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/composition_and_aggregation/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/concurrency_and_parallelism/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/context_managers/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/control_flow_statements/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/data_structure_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/date_and_time_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/debugging_techniques/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/decorators_in_python/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/encapsulation_and_abstraction/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/exception_handling/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/file_io_operations/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/functions_and_lambdas/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/generators_and_iterators/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/inheritance_and_polymorphism/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/input_and_output_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/introduction_to_python/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/list_comprehensions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/magic_methods_and_operator_overloading/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/metaclasses_in_python/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/modules_and_packages/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/numeric_and_math_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/object_oriented_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/profiling_and_optimization/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/properties_and_descriptors/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/python_standard_library/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/python_syntax_and_semantics/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/regular_expressions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/string_manipulation_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/type_conversion_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/unit_testing_in_python/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/using_map_filter_reduce/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/variables_and_data_types/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/cheats/virtual_environments/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/abstract_base_classes/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/asynchronous_programming/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/built_in_sorting_and_searching/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/class_and_static_methods/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/classes_and_objects/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/composition_and_aggregation/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/concurrency_and_parallelism/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/context_managers/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/control_flow_statements/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/data_structure_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/date_and_time_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/debugging_techniques/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/decorators_in_python/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/encapsulation_and_abstraction/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/exception_handling/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/file_io_operations/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/functions_and_lambdas/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/generators_and_iterators/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/inheritance_and_polymorphism/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/input_and_output_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/introduction_to_python/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/list_comprehensions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/magic_methods_and_operator_overloading/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/metaclasses_in_python/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/modules_and_packages/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/numeric_and_math_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/object_oriented_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/profiling_and_optimization/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/projects/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/properties_and_descriptors/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/python_standard_library/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/python_syntax_and_semantics/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/regular_expressions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/string_manipulation_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/type_conversion_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/unit_testing_in_python/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/using_map_filter_reduce/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/variables_and_data_types/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/projects/virtual_environments/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/abstract_base_classes/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/asynchronous_programming/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/built_in_sorting_and_searching/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/class_and_static_methods/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/classes_and_objects/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/composition_and_aggregation/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/concurrency_and_parallelism/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/context_managers/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/control_flow_statements/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/data_structure_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/date_and_time_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/debugging_techniques/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/decorators_in_python/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/encapsulation_and_abstraction/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/exception_handling/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/file_io_operations/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/functions_and_lambdas/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/generators_and_iterators/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/inheritance_and_polymorphism/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/input_and_output_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/introduction_to_python/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/list_comprehensions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/magic_methods_and_operator_overloading/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/metaclasses_in_python/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/modules_and_packages/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/numeric_and_math_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/object_oriented_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/profiling_and_optimization/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/properties_and_descriptors/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/python_standard_library/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/python_syntax_and_semantics/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/qnas/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/regular_expressions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/string_manipulation_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/type_conversion_functions/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/unit_testing_in_python/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/using_map_filter_reduce/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/variables_and_data_types/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/qnas/virtual_environments/</loc>
+         <lastmod>2024-06-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://learning.teachme.codes/references/references/</loc>
+         <lastmod>2024-06-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
