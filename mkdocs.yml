@@ -186,6 +186,7 @@ nav:
 - Home: index.md
 - Book Chapters:
   - Book Chapters: chapters/chapters.md
+  - Introduction to Python: chapters/introduction_to_python.md
   - Python Syntax and Semantics: chapters/python_syntax_and_semantics.md
   - Variables and Data Types: chapters/variables_and_data_types.md
   - Control Flow Statements: chapters/control_flow_statements.md
@@ -225,6 +226,7 @@ nav:
   - Asynchronous Programming: chapters/asynchronous_programming.md
 - Selected Projects:
   - Projects: projects/projects.md
+  - Introduction to Python: projects/introduction_to_python.md
   - Python Syntax and Semantics: projects/python_syntax_and_semantics.md
   - Variables and Data Types: projects/variables_and_data_types.md
   - Control Flow Statements: projects/control_flow_statements.md
@@ -264,6 +266,7 @@ nav:
   - Asynchronous Programming: projects/asynchronous_programming.md
 - Questions and Answers:
   - Questions and Answers: qnas/qnas.md
+  - Introduction to Python: qnas/introduction_to_python.md
   - Python Syntax and Semantics: qnas/python_syntax_and_semantics.md
   - Variables and Data Types: qnas/variables_and_data_types.md
   - Control Flow Statements: qnas/control_flow_statements.md
@@ -303,6 +306,7 @@ nav:
   - Asynchronous Programming: qnas/asynchronous_programming.md
 - Cheat Sheets:
   - Cheat Sheets: cheats/cheats.md
+  - Introduction to Python: cheats/introduction_to_python.md
   - Python Syntax and Semantics: cheats/python_syntax_and_semantics.md
   - Variables and Data Types: cheats/variables_and_data_types.md
   - Control Flow Statements: cheats/control_flow_statements.md
