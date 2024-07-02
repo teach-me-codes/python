@@ -1,75 +1,10 @@
-
-# Welcome to Python Learning Portal
-
-<style>
-.circular-nav {
-    position: relative;
-    width: 600px; /* Increase width to accommodate the fourth button */
-    height: 100px;
-    background-color: white;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 25px; /* Rounded corners */
-}
-
-.nav-button {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: #0073e6;
-    border: 2px solid #0073e6;
-    font-size: 12px;
-    color: #ffffff;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.nav-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.nav-button i {
-    margin-right: 8px; /* Space between icon and text */
-}
-</style>
-
-<div class="circular-nav">
-    <button class="nav-button" id="book"><i class="fas fa-book"></i> Book </button>
-    <button class="nav-button" id="questions"><i class="fas fa-lightbulb"></i> Q&A</button>
-    <button class="nav-button" id="cheatsheets"><i class="fas fa-text"></i> Cheat Sheets</button>
-    <button class="nav-button" id="projects"><i class="fas fa-laptop"></i> Projects</button>
-    <button class="nav-button" id="references"><i class="fas fa-text"></i> References </button>
-</div>
-
-
-<script>
-document.getElementById('book').onclick = function() {
-    window.location.href = 'https://learning.teachme.codes/python/chapters/chapters';
-};
-document.getElementById('projects').onclick = function() {
-    window.location.href = 'https://learning.teachme.codes/python/projects/projects';
-};
-document.getElementById('questions').onclick = function() {
-    window.location.href = 'https://learning.teachme.codes/python/qnas/qnas';
-};
-document.getElementById('cheatsheets').onclick = function() {
-    window.location.href = 'https://learning.teachme.codes/python/cheats/cheats';
-};
-document.getElementById('references').onclick = function() {
-    window.location.href = 'https://learning.teachme.codes/python/references/references';
-};
-</script>
+# Welcome to the python  Book Chapters! 
 
 
 
-| Title | Detail |
-|-------|--------|
+
+| Title | Description | 
+| --- | --- |
 | [Introduction to Python](https://learning.teachme.codes/python/chapters/introduction_to_python) | Python is a high-level, interpreted programming language known for its simplicity and readability. It is widely used in web development, data analysis, artificial intelligence, and scientific computing. |
 | [Python Syntax and Semantics](https://learning.teachme.codes/python/chapters/python_syntax_and_semantics) | Python syntax refers to the rules that define the structure of the language, while semantics define the meaning of the language constructs. Understanding both is essential for writing correct and efficient code. |
 | [Variables and Data Types](https://learning.teachme.codes/python/chapters/variables_and_data_types) | Variables are used to store data in memory, while data types define the type of data that can be stored in a variable. Python supports various data types such as integers, floats, strings, lists, tuples, sets, and dictionaries. |

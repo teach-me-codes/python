@@ -1,486 +1,136 @@
-
-```markdown
 # Data Structure Functions in Python
 
 ## Introduction to Data Structure Functions
 
-Data structure functions in Python are essential for manipulating and working with various data structures such as lists, tuples, sets, and dictionaries. These functions offer a wide range of operations to efficiently add, remove, and modify elements within these data structures, making them indispensable tools for effective data handling in programming.
-
 ### Overview of Data Structures
-
-#### Explanation of Data Structures
-Data structures are fundamental constructs that enable programmers to organize and store data systematically. In Python, commonly used data structures include:
-- **Lists**: Ordered, mutable collections of items.
-- **Tuples**: Immutable sequences of elements.
-- **Sets**: Unordered collections of unique elements.
-- **Dictionaries**: Key-value pairs for efficient data retrieval.
-
-#### Importance in Programming
-Data structures are vital in programming to manage and manipulate data effectively. By using suitable data structures, programmers can optimize memory usage, enhance data retrieval speed, and simplify complex data operations. Data structure functions in Python provide a layer of abstraction for interacting with these structures seamlessly, allowing developers to perform diverse operations efficiently and effortlessly.
+| Title                           | Concept                                                            | Description                                    |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Explanation of Data Structures   | Data structures organize and store data efficiently in memory.    | Arrays, lists, stacks, queues, and maps are examples of data structures. |
+| Importance in Programming       | Facilitate data organization, manipulation, and retrieval.         | Data structures optimize algorithms and enhance program efficiency. |
 
 ### Understanding Functions in Python
-
-#### Definition of Functions
-Functions in Python are reusable blocks of code designed to execute specific tasks when called. In the context of data structure manipulation, functions are crucial for implementing operations such as adding, removing, and updating elements within data structures. They encapsulate logic to process data systematically, promoting code reusability and maintainability.
-
-#### Role of Functions in Data Structure Manipulation
-Functions enable developers to encapsulate data structure operations into reusable code units, fostering modular programming and improving code readability. By defining functions that specialize in handling specific data structure tasks, developers can abstract complexity and enhance the overall structure of their programs. Functions in Python facilitate cleaner, organized code that is easier to debug and maintain in the long term.
-
-By utilizing data structure functions in Python, programmers can streamline their code, improve data manipulation capabilities, and develop robust applications for efficient data structure management and processing. The subsequent sections will explore specific data structure functions and their applications in Python programming.
-
-
+| Title                           | Concept                                                            | Description                                    |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Definition of Functions         | Functions are blocks of reusable code to perform specific tasks.   | Functions help in structuring code and promoting reusability. |
+| Role of Functions in Data Structure Manipulation | Functions manipulate data structures effectively.                 | Functions provide methods for adding, removing, and modifying elements in data structures. |
 
 # Lists Functions
 
-## 1.1 Creating and Accessing Lists
-Lists in Python are fundamental data structures for storing collections of items. Understanding how to create lists and access their elements is essential for efficient data manipulation.
+## Creating and Accessing Lists
 
-1. **Syntax for List Creation**
-    - In Python, lists are created using square brackets `[]`, with elements separated by commas.
-    ```python
-    my_list = [1, 2, 3, 4, 5]
-    ```
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Syntax for List Creation         | Creating lists using square brackets in Python.                    |<pre lang="python">my_list = [1, 2, 3, 4, 5]</pre>|
+| Indexing and Slicing Lists       | Accessing specific elements and sublists in a list.                |<pre lang="python">print(my_list[0])  # Output: 1<br>print(my_list[1:3])  # Output: [2, 3]</pre>|
 
-2. **Indexing and Slicing Lists**
-    - List indexing starts at 0, and elements can be accessed using their index positions.
-    ```python
-    colors = ['red', 'blue', 'green', 'yellow']
-    print(colors[0])  # Output: red
-    ```
-    - Slicing enables extracting a specific subset using the `start:stop:step` notation.
-    ```python
-    numbers = [1, 2, 3, 4, 5]
-    print(numbers[1:4])  # Output: [2, 3, 4]
+## Modifying Lists
 
-## 1.2 Modifying Lists
-Modifying list elements is crucial in dynamic applications. Python offers methods for efficient addition and removal of elements from lists.
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Adding Elements to Lists         | Appending, inserting, or extending elements in a list.             |<pre lang="python">my_list.append(6)<br>my_list.insert(2, 10)<br>my_list.extend([7, 8])</pre>|
+| Removing Elements from Lists     | Removing elements based on index or value from a list.             |<pre lang="python">my_list.remove(3)<br>my_list.pop(0)</pre>|
 
-1. **Adding Elements to Lists**
-    - The `append()` method adds an element at the end of the list.
-    ```python
-    fruits = ['apple', 'banana']
-    fruits.append('orange')
-    print(fruits)  # Output: ['apple', 'banana', 'orange']
-    ```
-    - The `insert()` method inserts an element at a specified index.
-    ```python
-    numbers = [1, 2, 3, 4, 5]
-    numbers.insert(2, 10)
-    print(numbers)  # Output: [1, 2, 10, 3, 4, 5]
+## List Operations
 
-2. **Removing Elements from Lists**
-    - The `remove()` method eliminates an element by value.
-    ```python
-    fruits = ['apple', 'banana', 'orange']
-    fruits.remove('banana')
-    print(fruits)  # Output: ['apple', 'orange']
-    ```
-    - The `pop()` method removes and returns an element at a specific index.
-    ```python
-    numbers = [1, 2, 3, 4, 5]
-    removed_num = numbers.pop(2)
-    print(numbers)  # Output: [1, 2, 4, 5]
-    print(removed_num)  # Output: 3
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Common Operations on Lists       | Operations like sorting, reversing, and counting in lists.         |<pre lang="python">my_list.sort()<br>my_list.reverse()<br>count = my_list.count(2)</pre>|
+| Iterating Over Lists             | Using loops or list comprehensions to iterate through lists.       |<pre lang="python">for item in my_list:<br>    print(item)</pre>|
 
-## 1.3 List Operations
-Various operations like sorting, searching, and iterating are common when working with lists in Python.
+## List Comprehensions
 
-1. **Common Operations on Lists**
-    - The `sort()` method sorts a list in place.
-    ```python
-    numbers = [3, 1, 4, 1, 5, 9, 2, 6]
-    numbers.sort()
-    print(numbers)  # Output: [1, 1, 2, 3, 4, 5, 6, 9]
-    ```
-    - The `len()` function determines the length of a list.
-    ```python
-    fruits = ['apple', 'banana', 'orange']
-    print(len(fruits))  # Output: 3
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Definition and Syntax            | Concise way to create lists based on existing lists.               |<pre lang="python">new_list = [x**2 for x in range(10) if x % 2 == 0]</pre>|
+| Advantages of List Comprehensions | Simplify and condense code for list creation.                    | Compact and readable syntax for list operations. |
 
-2. **Iterating Over Lists**
-    - Iterating through lists using loops allows systematic operations on each element.
-    ```python
-    numbers = [1, 2, 3, 4, 5]
-    for num in numbers:
-        print(num)
-    ```
+# Tuple Functions
 
-## 1.4 List Comprehensions
-List comprehensions offer a concise way to create lists in Python, enhancing code readability and efficiency.
+## Creating and Accessing Tuples
 
-1. **Definition and Syntax**
-    List comprehensions enable defining and creating lists succinctly in a single line.
-    ```python
-    squares = [x**2 for x in range(1, 6)]
-    print(squares)  # Output: [1, 4, 9, 16, 25]
-    ```
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Tuple Initialization             | Defining tuples with parentheses in Python.                        |<pre lang="python">my_tuple = (1, 2, 3)</pre>|
+| Accessing Tuple Elements         | Retrieving elements from tuples using indexing.                    |<pre lang="python">print(my_tuple[0])  # Output: 1</pre>|
 
-2. **Advantages of List Comprehensions**
-    - List comprehensions are more expressive and readable compared to traditional loops.
-    - They provide a compact and efficient approach to list generation without extensive code.
+## Modifying Tuples
 
-Mastering list functions in Python equips you to effectively manipulate and extract information from lists, which are pivotal data structures in Python programming.
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Immutability of Tuples           | Tuples are immutable, meaning their elements cannot be changed.    |<pre lang="python">my_tuple[0] = 5  # This will raise an error</pre>|
+| Workarounds for Modifying Tuples | Reassigning a new tuple to work with the desired changes.          |<pre lang="python">my_tuple = (4, 2, 3)</pre>|
 
-## Tuple Functions in Python
+## Tuple Operations
 
-Tuples in Python are immutable sequences used to store collections of elements. Despite their immutability, tuple functions offer a range of methods to manipulate tuples effectively. This section delves into various aspects of tuple functions in Python.
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Tuple Concatenation              | Combining tuples to create a new tuple.                            |<pre lang="python">new_tuple = my_tuple + (4, 5)</pre>|
+| Tuple Packing and Unpacking      | Assigning multiple values to a single tuple or vice versa.         |<pre lang="python">a, b, c = my_tuple  # Unpacking<br>my_new_tuple = (1, 2, 3)  # Packing</pre>|
 
-### 1. Creating and Accessing Tuples
+## Tuple Methods
 
-#### 1.1 Tuple Initialization
-Tuples can be initialized using parentheses `()` with comma-separated values or by simply separating elements with commas. Below is an example of tuple initialization:
-```python
-# Tuple initialization
-tuple_example = (1, 2, 3)
-tuple_without_parentheses = 4, 5, 6
-```
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Methods Available for Tuples     | `count()` and `index()` methods for tuple manipulation.            |<pre lang="python">count = my_tuple.count(2)<br>index = my_tuple.index(3)</pre>|
 
-#### 1.2 Accessing Tuple Elements
-Accessing tuple elements is achieved through indexing. Python adopts zero-based indexing, starting from index 0. Negative indexing is also permissible to access elements from the end of the tuple. Here is how you can access tuple elements:
-```python
-# Accessing tuple elements
-print(tuple_example[0])  # Output: 1
-print(tuple_example[-1])  # Output: 3
-```
+# Dictionary Functions
 
-### 2. Modifying Tuples
+## Creating and Accessing Dictionaries
 
-#### 2.1 Immutability of Tuples
-Tuples are immutable, thereby disallowing modifications, additions, or removals of elements once created. Any attempt to alter a tuple will raise an error.
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Dictionary Initialization        | Defining dictionaries using curly braces in Python.                |<pre lang="python">my_dict = {'one': 1, 'two': 2}</pre>|
+| Accessing Dictionary Items       | Retrieving values based on keys from dictionaries.                 |<pre lang="python">print(my_dict['one'])  # Output: 1</pre>|
 
-#### 2.2 Workarounds for Modifying Tuples
-While tuples are immutable, a workaround involves converting a tuple to a list, making modifications, and converting it back to a tuple. This process indirectly allows for 'modifying' a tuple by creating a new one. Here is an example of modifying a tuple using this technique:
-```python
-# Modifying a tuple using a workaround
-tuple_example = (1, 2, 3)
-tuple_list = list(tuple_example)
-tuple_list[1] = 5
-tuple_modified = tuple(tuple_list)
-```
+## Modifying Dictionaries
 
-### 3. Tuple Operations
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Adding and Updating Dictionary Items | Inserting new key-value pairs or updating existing ones.         |<pre lang="python">my_dict['three'] = 3<br>my_dict['one'] = 10</pre>|
+| Removing Dictionary Items        | Deleting items from dictionaries based on keys.                   |<pre lang="python">del my_dict['two']<br>my_dict.pop('three')</pre>|
 
-#### 3.1 Tuple Concatenation
-Tuple concatenation merges multiple tuples to form a new tuple without altering the original tuples:
-```python
-# Tuple concatenation
-tuple1 = (1, 2)
-tuple2 = (3, 4)
-concatenated_tuple = tuple1 + tuple2
-```
+## Dictionary Operations
 
-#### 3.2 Tuple Packing and Unpacking
-Tuple packing allows the creation of tuples with multiple elements separated by commas, while unpacking assigns tuple elements to individual variables:
-```python
-# Tuple packing and unpacking
-packed_tuple = 1, 2, 3
-a, b, c = packed_tuple  # Unpacking the tuple
-``` 
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Common Operations on Dictionaries | Performing actions like iterating, sorting, and copying.         |<pre lang="python">for key, value in my_dict.items():<br>    print(key, value)</pre>|
+| Iterating Over Dictionary Items   | Accessing keys, values, or items in dictionaries efficiently.     |<pre lang="python">keys = my_dict.keys()<br>values = my_dict.values()</pre>|
 
-### 4. Tuple Methods
+## Dictionary Comprehensions
 
-#### 4.1 Methods Available for Tuples
-Python provides built-in tuple methods like `count()` and `index()` for specific tuple operations.
-
-#### 4.2 Examples of Tuple Methods
-```python
-# Tuple method examples
-tuple_example = (1, 2, 2, 3)
-count_of_2 = tuple_example.count(2)  # Count occurrences of an element
-index_of_3 = tuple_example.index(3)  # Find the index of an element
-```
-
-In conclusion, this section has covered creating, accessing, modifying, and performing operations on tuples in Python using tuple functions. While tuples are immutable, strategies such as converting to a list and back enable achieving desired modifications indirectly.
-
-## Data Structure Functions: Dictionary Functions
-
-### 1. Creating and Accessing Dictionaries
-Dictionaries in Python are key-value paired data structures offering efficient data storage and retrieval mechanisms.
-
-#### 1.1 Dictionary Initialization
-Initializing dictionaries involves creating new objects with key-value pairs, which could be empty or pre-populated with data.
-
-```python
-# Initializing an empty dictionary
-my_dict = {}
-
-# Initializing a dictionary with data
-student = {'name': 'Alice', 'age': 25, 'major': 'Computer Science'}
-```
-
-#### 1.2 Accessing Dictionary Items
-To retrieve values from dictionaries, you need to reference the associated keys.
-
-```python
-# Accessing values using keys
-print(student['name'])  # Output: Alice
-print(student['age'])   # Output: 25
-```
-
-### 2. Modifying Dictionaries
-Python dictionary functions facilitate efficient modification of dictionary contents.
-
-#### 2.1 Adding and Updating Dictionary Items
-You can add new key-value pairs or update existing values in dictionaries.
-
-```python
-# Adding a new key-value pair
-student['GPA'] = 3.7
-
-# Updating an existing value
-student['age'] = 26
-```
-
-#### 2.2 Removing Dictionary Items
-Removing items from dictionaries involves deleting key-value pairs based on specified keys.
-
-```python
-# Removing a key-value pair
-del student['major']
-```
-
-### 3. Dictionary Operations
-Python supports various operations that can be performed on dictionaries efficiently.
-
-#### 3.1 Common Operations on Dictionaries
-- **Checking key existence**: Utilize the `in` keyword.
-- **Obtaining the number of items**: Use the `len()` function.
-- **Cloning a dictionary**: Employ the `copy()` method.
-
-#### 3.2 Iterating Over Dictionary Items
-Iterate over dictionary keys, values, or key-value pairs using loops or dictionary-specific methods like `items()`.
-
-```python
-# Iterating over keys
-for key in student:
-    print(key)
-
-# Iterating over values
-for value in student.values():
-    print(value)
-
-# Iterating over key-value pairs
-for key, value in student.items():
-    print(key, value)
-```
-
-### 4. Dictionary Comprehensions
-Dictionary comprehensions offer a concise way to generate dictionaries based on existing iterables or conditions.
-
-#### 4.1 Definition and Syntax
-Dictionary comprehensions have a syntax similar to list comprehensions but produce dictionaries.
-
-```python
-# Creating a dictionary using comprehension
-squared_values = {x: x**2 for x in range(1, 5)}
-```
-
-#### 4.2 Use Cases for Dictionary Comprehensions
-- **Filtering data**: Creating a new dictionary with selected key-value pairs.
-- **Transforming data**: Modifying values while constructing a new dictionary.
-
-Employing dictionary functions in Python facilitates efficient data manipulation and organization, serving critical roles in diverse programming tasks.
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Syntax for Dictionary Comprehensions | Creating dictionaries in a concise manner.                        |<pre lang="python">{key: value for key, value in zip(keys, values)}</pre>|
+| Use Cases for Dictionary Comprehensions | Applications in data transformation and filtering.               | Efficient way to generate dictionaries from existing data. |
 
 # Set Functions
 
-Sets in Python are versatile data structures that store unique elements and provide efficient ways to perform various operations like union, intersection, and difference. Set functions enable the manipulation of sets by allowing the addition, removal, and access of elements within sets.
+## Creating and Accessing Sets
 
-## 1. Creating and Accessing Sets
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Set Initialization               | Defining sets using curly braces or the set() function.            |<pre lang="python">my_set = {1, 2, 3}</pre>|
+| Accessing Set Elements          | Performing checks or operations on set elements.                  |<pre lang="python">if 1 in my_set:<br>    print("1 is in the set")</pre>|
 
-### 1.1 Set Initialization
-When creating a set in Python, you can initialize it using curly braces `{}` with comma-separated elements inside. Sets do not allow duplicates, hence automatically eliminate any duplicate elements.
+## Modifying Sets
 
-```python
-# Initializing a set
-my_set = {1, 2, 3, 4, 5}
-```
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Adding Elements to Sets         | Inserting new elements into sets using add() or update().         |<pre lang="python">my_set.add(4)<br>my_set.update({5, 6})</pre>|
+| Removing Elements from Sets     | Deleting elements from sets through discard() or remove().        |<pre lang="python">my_set.remove(3)<br>my_set.discard(2)</pre>|
 
-### 1.2 Accessing Set Elements
-Sets are unordered collections. Therefore, you cannot access elements by index like lists. However, you can iterate through a set to access each element individually.
+## Set Operations
 
-```python
-# Accessing set elements
-for element in my_set:
-    print(element)
-```
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Operations like Union, Intersection, and Difference | Set theory operations to combine or compare sets.              |<pre lang="python">union_set = set1 | set2<br>intersection_set = set1 & set2<br>difference_set = set1 - set2</pre>|
+| Subset and Superset Operations   | Checking relationships between sets like subset and superset.    |<pre lang="python">is_subset = set1.issubset(set2)<br>is_superset = set1.issuperset(set2)</pre>|
 
-## 2. Modifying Sets
+## Set Comprehensions
 
-### 2.1 Adding Elements to Sets
-You can add elements to a set using the `add()` method, which ensures uniqueness by not allowing duplicates.
+| Title                           | Concept                                                            | Code                                           |
+|-----------------------------|--------------------------------------------------------------------|------------------------------------------------|
+| Syntax for Set Comprehensions   | Constructing sets based on existing sets or iterables.            |<pre lang="python">{x for x in my_list if x % 2 == 0}</pre>|
+| Benefits of Set Comprehensions   | Streamlined generation of sets with specific conditions.          | Concise and expressive syntax for set creation. |
 
-```python
-# Adding elements to a set
-my_set.add(6)
-```
-
-### 2.2 Removing Elements from Sets
-Removing elements from a set can be done using methods like `remove()` or `discard()`. If the element is not present, `remove()` raises an error, while `discard()` does not.
-
-```python
-# Removing elements from a set
-my_set.remove(3)
-my_set.discard(10)  # No error raised if 10 is not in the set
-```
-
-## 3. Set Operations
-
-### 3.1 Operations like Union, Intersection, and Difference
-Sets support operations like union, intersection, and difference, which can be performed using built-in methods or operators.
-
-```python
-set1 = {1, 2, 3}
-set2 = {3, 4, 5}
-# Union
-union_set = set1.union(set2)
-# Intersection
-intersection_set = set1.intersection(set2)
-# Difference
-difference_set = set1.difference(set2)
-```
-
-### 3.2 Subset and Superset Operations
-You can check if a set is a subset or a superset of another set using the `issubset()` and `issuperset()` methods respectively.
-
-```python
-# Subset and Superset operations
-is_subset = set1.issubset(set2)
-is_superset = set1.issuperset(set2)
-```
-
-## 4. Set Comprehensions
-
-### 4.1 Syntax for Set Comprehensions
-Set comprehensions provide a concise way to create sets based on existing iterables using a similar syntax to list comprehensions.
-
-```python
-# Set Comprehension
-squared_set = {x**2 for x in range(1, 5)}
-```
-
-### 4.2 Benefits of Set Comprehensions
-Set comprehensions offer readability and compactness in code, allowing for quick set creation based on specific criteria or transformations.
-
-Set functions in Python provide efficient ways to work with sets, offering a wide range of operations for set manipulation and management.
-
-## Data Structure Functions: Stack Functions
-
-### Implementing Stacks in Python
-In Python, stacks can be implemented using built-in data structures like lists or by defining custom stack classes. Stacks follow the **Last In First Out (LIFO)** principle, where the last element added is the first to be removed.
-
-#### Using Lists as Stacks
-Lists in Python can easily be used as stacks by utilizing methods like `append()` for pushing elements onto the stack and `pop()` for removing elements from the stack. Here is a simple example demonstrating the use of a list as a stack:
-```python
-stack = []
-stack.append(1)
-stack.append(2)
-stack.append(3)
-print(stack.pop())  # Output: 3
-```
-
-#### Defining Custom Stack Classes
-For more customized stack operations, defining a custom stack class can be beneficial. By creating a stack class, you can encapsulate stack operations and ensure data integrity. Below is an example of a basic custom stack implementation using a list:
-```python
-class Stack:
-    def __init__(self):
-        self.stack = []
-
-    def push(self, item):
-        self.stack.append(item)
-
-    def pop(self):
-        if not self.is_empty():
-            return self.stack.pop()
-        else:
-            return None
-
-    def is_empty(self):
-        return len(self.stack) == 0
-
-# Example usage
-custom_stack = Stack()
-custom_stack.push(10)
-custom_stack.push(20)
-print(custom_stack.pop())  # Output: 20
-```
-
-### Stack Methods
-Stack functions offer essential operations like push, pop, and peek that facilitate efficient manipulation of stack elements.
-
-#### Push and Pop Operations
-- **Push**: Adding an element onto the top of the stack.
-- **Pop**: Removing and returning the top element from the stack.
-
-#### Peeking at the Top Element
-Peeking allows you to access the top element of the stack without removing it. This can be useful for inspecting the element without altering the stack's structure.
-
-### Applications of Stacks
-Stacks find applications in various domains due to their simplicity and efficiency in managing data. 
-
-#### Examples of Stack Usage
-Stacks are commonly used in algorithms like recursive function calls, expression evaluation, and backtracking scenarios.
-
-#### Real-world Applications
-1. **Undo Mechanisms**: Applications with undo functionalities often use stacks to store the history of actions.
-2. **Web Browser History**: The back button in web browsers can be implemented using a stack to track visited URLs.
-
-Stack functions play a vital role in managing data structures effectively, providing a streamlined approach to handling elements in a **Last In First Out** fashion.
-## Queue Functions
-
-Queues represent a significant data structure in Python, following the First-In, First-Out (FIFO) principle. Queue functions in Python play a crucial role in efficiently managing queues by facilitating the addition and removal of elements in a structured manner. This section explores the implementation of queues, various queue methods, and their applications in different algorithms and concurrent programming scenarios.
-
-### 1. Implementing Queues in Python
-
-Queues in Python can be implemented using various techniques, such as utilizing lists or the `deque` data structure from the `collections` module, and creating circular queues.
-
-#### 1.1 Using Lists or Deque from Collections Module
-
-Implementation of queues using lists or the `deque` data structure from the `collections` module is common in Python. While lists provide a straightforward approach for implementing queues, `deque` offers more efficient operations, especially with a large number of elements.
-
-Example of implementing a queue using `deque`:
-
-```python
-from collections import deque
-
-# Initialize a queue using deque
-queue = deque()
-
-# Enqueue elements
-queue.append(1)
-queue.append(2)
-
-# Dequeue element
-dequeued_element = queue.popleft()
-```
-
-#### 1.2 Creating Circular Queues
-
-Circular queues are a specialized type of queue where the rear and front pointers can wrap around the queue array. This feature allows for effective space utilization and continuous operation without frequent resizing of the queue.
-
-### 2. Queue Methods
-
-Queue methods in Python comprise essential operations for adding and removing elements from the queue, along with maintaining the front and rear pointers within the queue structure.
-
-#### 2.1 Enqueue and Dequeue Operations
-
-- **Enqueue**: Addition of an element to the rear of the queue.
-- **Dequeue**: Removal of an element from the front of the queue.
-
-#### 2.2 Front and Rear Pointers
-
-- The front pointer indicates the element at the front of the queue.
-- The rear pointer denotes the position for enqueueing the next element.
-
-### 3. Applications of Queues
-
-Incorporating queues provides several advantages in algorithms and scenarios necessitating concurrency and multi-threading.
-
-#### 3.1 Queue Applications in Algorithms
-
-- Queues play a vital role in algorithms like Breadth-First Search (BFS) and the implementation of task scheduling algorithms.
-
-#### 3.2 Concurrency and Multi-Threading Scenarios
-
-- In concurrent programming, queues serve as essential tools for managing communication and coordination among multiple threads or processes, ensuring synchronization and data integrity.
-
-By leveraging the functionalities offered by queue functions in Python, one can adeptly handle data flow and task execution in diverse programming contexts.
+# Stack Functions
